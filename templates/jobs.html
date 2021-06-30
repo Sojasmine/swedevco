@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    
-    
+
 {% for jobs in jobs %}
     {{ jobs.category_name }}<br>
     {{ jobs. job_title }}<br>
@@ -15,5 +14,53 @@
     {{ jobs.application }}<br>
     {{ jobs.submit_date }}<br>
 {% endfor %}
+
+
+<div class="container">
+    <div class="card-panel">
+        <h3 class="center-align">
+            <strong>Company</strong></h3>
+        <p class="center-align">Job title</p>
+        <p class="center-align">Salary</p>
+        <p class="center-align">Category</p>
+        <p class="center-align">location</p>
+       
+        <ul class="collapsible popout ">
+            <li>
+              <div class="collapsible-header light blue darken-2">Job description</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit
+                  jhhjkjhljlkjlkö
+                 
+              </span>
+                <div>
+                <h6>Experience</h6>
+                <p>grghtry</p></div>
+
+                <div>
+                <h6>Qualification</h6>
+                <p>grghtry</p></div>
+
+                <div>
+                <h6>About the company</h6>
+                <p>grghtry</p></div>
+
+                <div>
+                <h6>Application</h6>
+                <p>grghtry</p></div>
+
+                <div>
+                <h6>Submit date</h6>
+                <p>grghtry</p></div>
+                
+                </div>
+
+            </li>
+            
+          </ul>
+                
+    </div>
+</div>
+
+
 
 {% endblock %}
