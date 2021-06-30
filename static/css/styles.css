@@ -71,3 +71,8 @@
     color: skyblue;
   }
   
+  /* Code for the sign up button */
+.btn {
+    background-image: linear-gradient(to right, #790758 0%, #0e60ee 51%, #f51fb8 100%);
+  }
+  

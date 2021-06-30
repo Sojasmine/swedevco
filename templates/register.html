@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Headings on the registration page and paragraph -->
+<h4 class="center-align">Create your account</h4>
+<p class="center-align">Please fill this form to create an account!</p>
+
+<!-- Registration form -->
+<div class="row">
+    <form class="col s12 m4 offset-m4" method="POST"  action="{{ url_for('register') }}">
+        <div class="card-panel">
+            <!-- username -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="tiny fas fa-user-circle prefix"></i>
+                    <input id="username" name="username" type="text" minlength="5"
+                         maxlength="15" pattern="^[a-zA-Z0-9]{5-15}$" class="validate" required>
+                    <label for="username">Username</label>
+                </div>
+            </div>
+            <!-- Password -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="tiny fas fa-user-lock prefix"></i>
+                    <input id="password" name="password" type="password" minlength="5" 
+                        maxlenght="15" pattern="^[a-zA-Z0-9]{5-15}$" class="validate" required>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <!-- First Name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="tiny fas fa-user prefix"></i>
+                    <input placeholder="first_name" name="first_name" id="first_name" type="text" class="validate" required>
+                    <label for="first_name">First Name</label>
+                </div>
+            </div>
+            <!-- Last Name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="tiny fas fa-user prefix"></i>
+                    <input placeholder="last_name" name="last_name" type="text" class="validate" required>
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <p class="center-align">&#9830; 5 characters minimum<br>
+               &#9830; Use letter from aA - zZ</p>
+            <!-- Sign up button-->
+            <div class="row">
+                <button type="submit" class="col s12 btn small">
+                    Create account <i class="tiny fas fa-sign-in-alt"></i>
+                </button>
+            </div>
+    </form>
+</div>
+
+<div class="row">
+    <div class="col s12">
+        <p class="center-align">
+            Already have an account?
+            <a href="#" class="light-blue">Sign In</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
