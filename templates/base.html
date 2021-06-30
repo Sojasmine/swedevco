@@ -35,8 +35,8 @@
                 {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
                                 aria-hidden="true"></i> Profile</a></li>
-                    <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
-                    <li><a href="sass.html"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
+                    <li><a href="{{ url_for('post_jobs') }}"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
+                    <li><a href="#"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
                     <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i>
                             Signout</a></li>
                 {% else %}
@@ -60,8 +60,8 @@
             {% if session.user %}
             <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
                         aria-hidden="true"></i> Profile</a></li>
-            <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
-            <li><a href="sass.html"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
+            <li><a href="{{ url_for('post_jobs') }}"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
+            <li><a href="#"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
             <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a>
             </li>
             {% else %}

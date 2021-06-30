@@ -104,6 +104,11 @@ def signout():
     return redirect(url_for("signin"))
 
 
+@app.route("/post_jobs")
+def post_jobs():
+    return render_template("post_jobs.html")
+
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")

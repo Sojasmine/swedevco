@@ -3,6 +3,6 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
     $('.collapsible').collapsible();
   /* for the all jobs page*/
- 
+  
     
   });
