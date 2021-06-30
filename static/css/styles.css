@@ -78,7 +78,7 @@
   
    /* Code for the flash messages */
    .flashes h6 {
-    border: 2px solid red;
+    border: 2px solid #f51fb8;
     padding: 10px;
     border-radius: 20px 20px;
     

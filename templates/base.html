@@ -32,15 +32,20 @@
                     <li><a href="sass.html"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All
                             Jobs</a></li>
-                    <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle" aria-hidden="true"></i> Profile</a></li>
+                {% if session.user %}
+                    <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
+                                aria-hidden="true"></i> Profile</a></li>
                     <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
                     <li><a href="sass.html"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
-                    <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Signin</a></li>
-                    <li><a href="sass.html"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a></li>
+                    <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i>
+                            Signout</a></li>
+                {% else %}
+                    <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i>
+                            Signin</a></li>
                     <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt"
                                 aria-hidden="true"></i>Register </a></li>
                     <li><a href="sass.html"><i class="tiny fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
-
+                {% endif%}
                 </ul>
             </div>
         </nav>
@@ -52,14 +57,20 @@
             <li><a href="sass.html"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
             <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All Jobs</a>
             </li>
-            <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle" aria-hidden="true"></i> Profile</a></li>
+            {% if session.user %}
+            <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
+                        aria-hidden="true"></i> Profile</a></li>
             <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
             <li><a href="sass.html"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
-            <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Signin</a></li>
-            <li><a href="sass.html"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a></li>
+            <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a>
+            </li>
+            {% else %}
+            <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Signin</a>
+            </li>
             <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt" aria-hidden="true"></i>Register </a>
             </li>
             <li><a href="sass.html"><i class="tiny fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
+            {% endif %}
         </ul>
 
     </head>
@@ -68,14 +79,15 @@
         <!--flash messages-->
         {% with messages = get_flashed_messages() %}
         {% if messages %}
-            {% for message in messages %}
-            <div class="row flashes">
-            <h6 class="white center-align col s12 m4 offset-m4"><strong> <i class="tiny fa fa-check"></i>  {{ message }}  <i class="tiny fa fa-check"></i></strong></h6>
-            </div>
-            {% endfor %}
+        {% for message in messages %}
+        <div class="row flashes">
+            <h6 class="white center-align col s12 m4 offset-m4"><strong> <i class="tiny fa fa-check"></i> {{ message }}
+                    <i class="tiny fa fa-check"></i></strong></h6>
+        </div>
+        {% endfor %}
         {% endif %}
         {% endwith %}
-</section>
+    </section>
 
     <main>
         {% block content %}
