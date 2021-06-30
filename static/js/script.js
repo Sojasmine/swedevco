@@ -4,6 +4,8 @@ $(document).ready(function(){
      /* for the all jobs page*/
     $('.collapsible').collapsible();
   /* for the post_jobs page*/
+  $('input#input_text, textarea#textarea2').characterCounter();
+$('select').formSelect();
   $('.datepicker').datepicker({
     format: "dd mmm, yyyy",
     yearRange: 3,
@@ -12,6 +14,6 @@ $(document).ready(function(){
       done: "Select"
     }
   });
-$('input#input_text, textarea#textarea2').characterCounter();
+
     
   });

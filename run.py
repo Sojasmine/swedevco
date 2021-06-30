@@ -106,7 +106,8 @@ def signout():
 
 @app.route("/post_jobs")
 def post_jobs():
-    return render_template("post_jobs.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("post_jobs.html", categories=categories)
 
 
 @app.route("/contact")
