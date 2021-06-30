@@ -76,3 +76,10 @@
     background-image: linear-gradient(to right, #790758 0%, #0e60ee 51%, #f51fb8 100%);
   }
   
+   /* Code for the flash messages */
+   .flashes h6 {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 20px 20px;
+    
+  }

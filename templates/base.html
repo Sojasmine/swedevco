@@ -29,37 +29,58 @@
                 <a href="#!" class="brand-logo"><b>Sw<span>ed</span><span>ev</span>Co.</b></a></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html"><i class="tiny fa fa-home" aria-hidden="true"></i>  Home</a></li>
-                    <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All Jobs</a></li>
+                    <li><a href="sass.html"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All
+                            Jobs</a></li>
                     <li><a href="sass.html"><i class="tiny fa fa-user-circle" aria-hidden="true"></i> Profile</a></li>
-                    <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i>  Post Jobs</a></li>
+                    <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
                     <li><a href="sass.html"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
                     <li><a href="sass.html"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Signin</a></li>
                     <li><a href="sass.html"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a></li>
-                    <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt" aria-hidden="true"></i>Register </a></li>
+                    <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt"
+                                aria-hidden="true"></i>Register </a></li>
                     <li><a href="sass.html"><i class="tiny fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
-                    
+
                 </ul>
             </div>
         </nav>
-         <!--mobile side navbar-->
+        <!--mobile side navbar-->
         <ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center-align"></h4>SwedevCo</li>
-            <li><a href="sass.html"><i class="tiny fa fa-home" aria-hidden="true"></i>  Home</a></li>
-            <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All Jobs</a></li>
+            <li>
+                <h4 class="center-align"></h4>SwedevCo
+            </li>
+            <li><a href="sass.html"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All Jobs</a>
+            </li>
             <li><a href="sass.html"><i class="tiny fa fa-user-circle" aria-hidden="true"></i> Profile</a></li>
-            <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i>  Post Jobs</a></li>
+            <li><a href="sass.html"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a></li>
             <li><a href="sass.html"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
             <li><a href="sass.html"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Signin</a></li>
             <li><a href="sass.html"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a></li>
-            <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt" aria-hidden="true"></i>Register </a></li>
+            <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt" aria-hidden="true"></i>Register </a>
+            </li>
             <li><a href="sass.html"><i class="tiny fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
         </ul>
 
     </head>
 
-    {% block content %}
-    {% endblock %}
+    <section>
+        <!--flash messages-->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="row flashes">
+            <h6 class="white center-align"><strong> <i class="tiny fa fa-check"></i>  {{ message }}  <i class="tiny fa fa-check"></i></strong></h6>
+            </div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+</section>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
