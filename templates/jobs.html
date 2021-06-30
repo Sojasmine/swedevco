@@ -1,56 +1,43 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% for jobs in jobs %}
-    {{ jobs.category_name }}<br>
-    {{ jobs. job_title }}<br>
-    {{ jobs.salary }}<br>
-    {{ jobs.location }}<br>
-    {{ jobs.company }}<br>
-    {{ jobs.jobs_description }}<br>
-    {{ jobs.experience }}<br>
-    {{ jobs.qualifictaion }}<br>
-    {{ jobs.about_the_company}}<br>
-    {{ jobs.application }}<br>
-    {{ jobs.submit_date }}<br>
-{% endfor %}
-
 
 <div class="container">
+    {% for jobs in jobs %}
     <div class="card-panel">
         <h3 class="center-align">
-            <strong>Company</strong></h3>
-        <p class="center-align">Job title</p>
-        <p class="center-align">Salary</p>
-        <p class="center-align">Category</p>
-        <p class="center-align">location</p>
+            <strong>{{ jobs.company }}</strong></h3>
+        <p class="center-align">{{ jobs. job_title }}</p>
+        <p class="center-align">{{ jobs.salary }}</p>
+        <p class="center-align">{{ jobs.category_name }}</p>
+        <p class="center-align">{{ jobs.location }}</p>
        
         <ul class="collapsible popout ">
             <li>
-              <div class="collapsible-header light blue darken-2">Job description</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit
-                  jhhjkjhljlkjlkö
-                 
+              <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
+              <div class="collapsible-body"><span>
+                {{ jobs.jobs_description }}
               </span>
-                <div>
-                <h6>Experience</h6>
-                <p>grghtry</p></div>
 
                 <div>
-                <h6>Qualification</h6>
-                <p>grghtry</p></div>
+                <h6><strong>Experience:</strong></h6>
+                <p>{{ jobs.experience }}</p></div>
 
                 <div>
-                <h6>About the company</h6>
-                <p>grghtry</p></div>
+                <h6><strong>Qualification:</strong></h6>
+                <p>{{ jobs.qualifictaion }}</p></div>
 
                 <div>
-                <h6>Application</h6>
-                <p>grghtry</p></div>
+                <h6><strong>About the Company:</strong>/h6>
+                <p>{{ jobs.about_the_company}}</p></div>
+                
+                <div>
+               <h6><strong>Application:</strong></h6>
+                <p>{{ jobs.application }}</p></div>
 
                 <div>
-                <h6>Submit date</h6>
-                <p>grghtry</p></div>
+                <h6><strong>Last Submit Date:</strong></h6>
+                <p>{{ jobs.submit_date }}</p></div>
                 
                 </div>
 
@@ -59,6 +46,7 @@
           </ul>
                 
     </div>
+    {% endfor %}
 </div>
 
 
