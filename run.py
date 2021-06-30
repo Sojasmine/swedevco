@@ -19,6 +19,11 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+def index():
+    return render_template("index.html")
+
+
+
 @app.route("/get_jobs")
 def get_jobs():
     jobs = mongo.db.jobs.find()
@@ -98,6 +103,11 @@ def signout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("signin"))
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 
 if __name__ == "__main__":
