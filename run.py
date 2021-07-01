@@ -122,7 +122,7 @@ def post_jobs():
             "posted_by": session["user"]
         }
         mongo.db.jobs.insert_one(jobs)
-        flash("Your job is now published!")
+        flash("Your posts is now published!")
         return redirect(url_for("get_jobs"))
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("post_jobs.html", categories=categories)
@@ -130,6 +130,24 @@ def post_jobs():
 
 @app.route("/edit_jobs/<jobs_id>", methods=["GET", "POST"])
 def edit_jobs(jobs_id):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "job_title": request.form.get("job_title"),
+            "salary": request.form.get("salary"),
+            "location": request.form.get("location"),
+            "company": request.form.get("company"),
+            "job_description": request.form.get("job_description"),
+            "experience": request.form.get("experience"),
+            "qualification": request.form.get("qualification"),
+            "about_the_company": request.form.get("about_the_company"),
+            "application": request.form.get("application"),
+            "submit_date": request.form.get("submit_date"),
+            "posted_by": session["user"]
+        }
+        mongo.db.jobs.update({"_id": Objectid(jobs_id)}, submit)
+        flash("Your posts is now Updated!")
+
     jobs = mongo.db.jobs.find_one({"_id": ObjectId(jobs_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_jobs.html", jobs=jobs, categories=categories)
