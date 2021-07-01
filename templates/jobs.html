@@ -1,54 +1,71 @@
 {% extends "base.html" %}
 {% block content %}
 
+{% block styles %}
+<style>
+   body {
+     background-image: url('../static/images/image2.jpg');
+   }
+</style>
+{% endblock%}
 
-<div class="container">
-    {% for jobs in jobs %}
-    <div class="card-panel">
-        <h3 class="center-align">
-            <strong>{{ jobs.company }}</strong></h3>
-        <p class="center-align"><strong>{{ jobs. job_title }}</strong></p>
-        <p class="center-align">{{ jobs.salary }}</p>
-        <p class="center-align">{{ jobs.category_name }}</p>
-        <p class="center-align">{{ jobs.location }}</p>
-       
-        <ul class="collapsible popout ">
-            <li>
-              <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
-              <div class="collapsible-body"><span>
-                <h6>{{ jobs.job_description }}</h6>
-              </span>
 
-                <div>
-                <h6><strong>Experience:</strong></h6>
-                <p>{{ jobs.experience }}</p></div>
+<h4 class="center-align">Job lists</h4>
+<p class="center-align">Find job here:</p>
 
-                <div>
-                <h6><strong>Qualification:</strong></h6>
-                <p>{{ jobs.qualifictaion }}</p></div>
-
-                <div>
-                <h6><strong>About the Company:</strong>/h6>
-                <p>{{ jobs.about_the_company}}</p></div>
-                
-                <div>
-               <h6><strong>Application:</strong></h6>
-                <p>{{ jobs.application }}</p></div>
-
-                <div>
-                <h6><strong>Last Submit Date:</strong></h6>
-                <p>{{ jobs.submit_date }}</p></div>
-                
-                </div>
-
-            </li>
-            
-          </ul>
-                
-    </div>
-    {% endfor %}
 </div>
+<div class="container">
+  {% for jobs in jobs %}
+  <div class="card-panel">
+    <h3 class="center-align">
+      <strong>{{ jobs.company }}</strong></h3>
+    <p class="center-align"><strong>{{ jobs.job_title }}</strong></p>
+    <p class="center-align">{{ jobs.salary }}</p>
+    <p class="center-align">{{ jobs.category_name }}</p>
+    <p class="center-align">{{ jobs.location }}</p>
 
+    <ul class="collapsible popout">
+      <li>
+        <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
+        <div class="collapsible-body"><span>
+            <h6>{{ jobs.job_description }}</h6>
+          </span>
+
+          <div>
+            <h6><strong>Experience:</strong></h6>
+            <p>{{ jobs.experience }}</p>
+          </div>
+
+          <div>
+            <h6><strong>Qualification:</strong></h6>
+            <p>{{ jobs.qualification }}</p>
+          </div>
+
+          <div>
+            <h6><strong>About the Company:</strong></h6>
+            <p>{{ jobs.about_the_company }}</p>
+          </div>
+
+          <div>
+            <h6><strong>Application:</strong></h6>
+            <p>{{ jobs.application }}</p>
+          </div>
+
+          <div>
+            <h6><strong>Last Submit Date:</strong></h6>
+            <p>{{ jobs.submit_date }}</p>
+          </div>
+
+        </div>
+
+      </li>
+      <p class="center-align"><em>Posted by: {{ jobs.posted_by }}</em></p>
+
+    </ul>
+
+  </div>
+  {% endfor %}
+</div>
 
 
 {% endblock %}

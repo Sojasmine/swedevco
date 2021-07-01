@@ -65,12 +65,12 @@ def signin():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(
-                        request.form.get("username")))
-                    return redirect(url_for(
-                        "profile", username=session["user"]))
+                    existing_user["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Wrong Username and/or Password")
@@ -84,12 +84,12 @@ def signin():
     return render_template("signin.html")
 
 
-@app.route("/profile<username>", methods=["GET", "POST"])
+@app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    # grab the session user's user data from db
+    # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    
+
     if session["user"]:
         return render_template("profile.html", username=username)
 
@@ -104,8 +104,26 @@ def signout():
     return redirect(url_for("signin"))
 
 
-@app.route("/post_jobs")
+@app.route("/post_jobs", methods=["GET", "POST"])
 def post_jobs():
+    if request.method == "POST":
+        jobs = {
+            "category_name": request.form.get("category_name"),
+            "job_title": request.form.get("job_title"),
+            "salary": request.form.get("salary"),
+            "location": request.form.get("location"),
+            "company": request.form.get("company"),
+            "job_description": request.form.get("job_description"),
+            "experience": request.form.get("experience"),
+            "qualification": request.form.get("qualification"),
+            "about_the_company": request.form.get("about_the_company"),
+            "application": request.form.get("application"),
+            "submit_date": request.form.get("submit_date"),
+            "posted_by": session["user"]
+        }
+        mongo.db.jobs.insert_one(jobs)
+        flash("Your job is now published!")
+        return redirect(url_for("get_jobs"))
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("post_jobs.html", categories=categories)
 
