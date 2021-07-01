@@ -65,42 +65,14 @@ The aim of the project was to create a simple community jobs board that included
 
 
 #### Current Features
-Home Page
-Large font used to make finding and distinguishing different pages and sections easy
 
-Responsive navigation bar that condenses down to an icon on smaller devices
+##### Home Page
 
-Large hero image of a city to draw the user in
+##### Jobs Page
 
-Logo and h1 tag that is clickable across all pages to allow the user to easily navigate back to the home page
+#### Post Job Page
 
-The two most recent jobs posted to the website will be shown on the home page for the user to view
-
-An about section to explain to the user what the website is for and explain that it is a place to repost jobs and not apply direct
-
-Footer with links to other website pages for easy navigation and also social links that open in a new tab
-
-Find Jobs Page
-Search bar appears at the top of the screen, with a helper message which explains users are able to search for jobs via job title or location
-
-A reset button allows the users to reset and return to the jobs page where all jobs are shown
-
-Easy to view jobs that displaying in order of most recent first
-
-Easy to find more information button which expands the job information and shows the user the description, responsibilities, requirements, benefits and who posted it
-
-Confirmation message appears on the screen to provide the user with feedback on any action they have taken
-
-Post Job Page
-Easy to understand form with a helper message which explains instructions for posting and formats to follow
-
-Large post job button at the bottom of the page which is easy to see
-
-Validation or selection is required for all aspects of the form
-
-Confirmation message appears on the screen to provide the user with feedback on any action they have taken
-
-Profile Page
+#### Profile Page
 Large hero image with someone pointing to their phone to clearly show what the page is for
 
 Text which welcomes the user to their profile page and displays their username
@@ -115,23 +87,24 @@ Delete modal pops up if a user wants to delete a job, asking for confirmation th
 
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
 
-Edit Job Page
+#### Edit Job Page
 Once the edit button is clicked the user is taken back to the same form for when they posted the job and they are able to update any details they need to
 
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
 
-Sign In Page
+#### Sign In Page
 Allows the user to sign in to their account
 
 Link to registration page if the user does not already have an account
 
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
 
-Register Page
+#### Register Page
 Allows the user to register an account
 Helper message appears next to the username and password box to explain to the user acceptable formats for both
 Link to the sign in page if the user already has an account
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
+
 3. Structure
 The site was designed to have essential pages which are Home, Find Jobs, Post Jobs, Profile and various Sign In/Register pages.
 
@@ -143,13 +116,14 @@ A selection of quality images were used to be engaging and draw users in. This w
 
 Some elements of the form require validation, but have no REGEX pattern requirement. Instead, a small helper message is posted next to this to assist the user with the proper formatting for posting/editing a job. This approach was chosen as limiting it using REGEX would make the form too difficult to complete, therefore causing a bad UX. As it is a community jobs board, the mentality would be that users are there to help others, so would conform to the requested format.
 
-Data Schema
+#### Data Schema
 MongoDB was used to host the database and the following schema was designed:
 
 
 
 Under the role_type collection there are three strings all called role_type, however they all have different values which are Permanent, Temporary and Fixed Term Contract
 This collection was added at a later date, as I wanted to be able to get the previously selected value from a form to show up automatically when editing the job
+
 4. Skeleton
 Wireframe was created using Balsamiq
 Home Page
@@ -175,7 +149,7 @@ All hero images were sourced from Unsplash
 Logo was sourced from Logopond
 Error image was sourced from Freepik
 
-Future Improvements
+#### Future Improvements
 Ability to contact the employer directly, rather than the website just functioning as a jobs board to make users aware of opportunities that may interest them
 Add more information to user profiles which will enable employers to search for suitable candidates
 Ability to upload a CV and allow employers to browse for new candidates that suit their needs
@@ -190,7 +164,7 @@ The profile page was simplified as the original design contained a lot of inform
 New collection called role_type was added to DB schema which features three strings (Permanent, Temporary and Fixed Term Contract)
 This was done in order to get the previously selected value from a form to show when editing a job
 
-Technologies Used
+#### Technologies Used
 Languages Used
 Python
 
@@ -235,8 +209,9 @@ Photoscissors
 
 Freepik
 
-Testing
-User Story Testing
+#### Testing
+
+* User Story Testing:
 "I want to be able to create new jobs for others to view"
 
 A user can navigate to the Post Jobs page to post a new opportunity
@@ -252,7 +227,9 @@ A user can navigate to their profile and delete any jobs they have posted
 "I want to be able to search for any jobs that may be suitable for me using different criteria such as job title or location"
 
 A user is able to navigate to the Find Jobs page and search for any jobs via their job title or location
-General Testing
+
+* General Testing
+
 All internal links on the page opened with success
 
 All external links opened in a new tab with success
@@ -279,7 +256,8 @@ The button to delete jobs not posted by Testuser2 did not appear
 Search - Able to search for roles via job title and location with success
 
 Reset button works and shows all jobs again
-Validation
+
+* Validation
 The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 W3C Markup Validator
@@ -294,7 +272,8 @@ PEP8 Online
 
 
 
-Devices
+* Devices
+
 The website was initially tested on different types of devices using Chrome DevTools to see if there were any immediate issues.
 
 The website works well on all mobile devices from 320px and upwards.
@@ -345,11 +324,13 @@ Error - h3 cannot appear as child of label
 W3C CSS Validator
 
 Error - Property text-underline-offset doesn't exist
-Known Bugs
+* Known Bugs
 Some elements of the form require validation, but have no REGEX pattern requirement. Instead, a small helper message is posted next to this to assist the user with the proper formatting for posting/editing a job. This approach was chosen as limiting it using REGEX would make the form too difficult to complete, therefore causing a bad UX. As it is a community jobs board, the mentality would be that users are there to help others, so would conform to the requested format.
 Although this is not a bug, I felt I should address the reasoning behind choosing to have to REGEX pattern
-Deployment
-GitHub Pages
+
+#### Deployment
+
+* GitHub Pages
 The project was deployed to GitHub Pages using the following steps:
 
 A local project was created in GitHub with a new repository called 'CI-MS3-Fledgling Talent'
@@ -448,11 +429,3 @@ All other text content was written by the developer
 Acknowledgements
 I would like to thank the following:
 
-My mentor, Spencer Barriball, for his guidance, wisdom and encouragement throughout the project
-
-CI Staff and Slack Community for their assistance with minor coding issues
-
-Ed Bradley and Richard Wells for their assistance with issues relating to my logo, button ids and search/reset buttons
-
-Support
-Thanks for taking the time to view my README. I hope you enjoyed your visit to my page.

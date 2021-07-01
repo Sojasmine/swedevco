@@ -2,9 +2,18 @@
 {% block content %}
 
 
+{% block styles %}
+<style>
+   body {
+     background-image: url('../static/images/image4.jpg');
+   }
+</style>
+{% endblock%}
+ 
+
 <!-- Headings on the registration page and paragraph -->
-<h4 class="center-align">Post Jobs</h4>
-<p class="center-align">Share all the vacant developer jobs here!</p>
+<h4 class="center-align  white-text lighten-4">Post Jobs</h4>
+<p class="center-align white-text lighten-4">Share all the vacant developer jobs here!</p>
 
 <!--form for posting jobs-->
 <div class="row">
@@ -12,7 +21,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="company" name="company" type="text" class="validate" required>
+                <input id ="company" name="company" type="text" class="validate white-text lighten-4" required>
                 <label for="company">Company</label>
             </div>
         </div>
@@ -20,7 +29,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="job_title" name="job_title" type="text" class="validate" required>
+                <input id ="job_title" name="job_title" type="text" class="validate white-text lighten-4" required>
                 <label for="job_title">Job Title</label>
             </div>
         </div>
@@ -28,7 +37,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="salary" name="salary" type="text" class="validate">
+                <input id ="salary" name="salary" type="text" class="validate white-text lighten-4">
                 <label for="salary">Salary</label>
             </div>
         </div>
@@ -50,7 +59,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="location" name="location" type="text" class="validate">
+                <input id ="location" name="location" type="text" class="validate white-text lighten-4">
                 <label for="location">Location</label>
             </div>
         </div>
@@ -58,7 +67,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="job_description" name="job_description" class="materialize-textarea validate" required></textarea>
+                <textarea id="job_description" name="job_description" class="materialize-textarea validate white-text lighten-4" required></textarea>
                 <label for="job_description">Job Description</label>
             </div>
         </div>
@@ -66,7 +75,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="experience" name="experience" class="materialize-textarea validate" required></textarea>
+                <textarea id="experience" name="experience" class="materialize-textarea validate white-text lighten-4" required></textarea>
                 <label for="experience">Experience</label>
             </div>
         </div>
@@ -74,7 +83,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="qualification" name="qualification" class="materialize-textarea validate" required></textarea>
+                <textarea id="qualification" name="qualification" class="materialize-textarea validate white-text lighten-4" required></textarea>
                 <label for="qualification">Qualification</label>
             </div>
             </div>
@@ -82,7 +91,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="about_the_company" name="about_the_company" class="materialize-textarea validate" required></textarea>
+                    <textarea id="about_the_company" name="about_the_company" class="materialize-textarea validate white-text lighten-4" required></textarea>
                     <label for="about_the_company">About The company</label>
                 </div>
                 </div>
@@ -90,7 +99,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="application" name="application" class="materialize-textarea validate" required></textarea>
+                    <textarea id="application" name="application" class="materialize-textarea validate white-text lighten-4" required></textarea>
                     <label for="application">Application</label>
                 </div>
                 </div>
@@ -98,7 +107,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id="submit_date" name="submit_date" type="text" class="datepicker validate" required>
+                <input id="submit_date" name="submit_date" type="text" class="datepicker validate white-text lighten-4" required>
                 <label for="submit_date">Last submit Date</label>
             </div>
         </div>

@@ -145,12 +145,12 @@ def edit_jobs(jobs_id):
             "submit_date": request.form.get("submit_date"),
             "posted_by": session["user"]
         }
-        mongo.db.jobs.update({"_id": Objectid(jobs_id)}, submit)
-        flash("Your posts is now Updated!")
+        mongo.db.jobs.update({"_id": ObjectId(jobs_id)}, submit)
+        flash("Posts Successfully Updated")
 
-    jobs = mongo.db.jobs.find_one({"_id": ObjectId(jobs_id)})
+    task = mongo.db.tasks.find_one({"_id": ObjectId(jobs_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_jobs.html", jobs=jobs, categories=categories)
+    return render_template("edit_jobs.html", task=task, categories=categories)
 
 
 @app.route("/contact")
