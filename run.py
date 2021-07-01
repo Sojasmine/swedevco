@@ -148,9 +148,9 @@ def edit_jobs(jobs_id):
         mongo.db.jobs.update({"_id": ObjectId(jobs_id)}, submit)
         flash("Posts Successfully Updated")
 
-    task = mongo.db.tasks.find_one({"_id": ObjectId(jobs_id)})
+    jobs = mongo.db.jobs.find_one({"_id": ObjectId(jobs_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_jobs.html", task=task, categories=categories)
+    return render_template("edit_jobs.html", jobs=jobs, categories=categories)
 
 
 @app.route("/contact")

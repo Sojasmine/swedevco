@@ -9,9 +9,9 @@
 </style>
 {% endblock%}
 
-
 <h4 class="center-align white-text text-darken-2">Job lists</h4>
 <p class="center-align white-text text-darken-2">Find job here:</p>
+
 
 </div>
 <div class="container">
@@ -30,9 +30,11 @@
         <!--delete button-->
         <div class="col-s3">
           {% if session.user|lower == jobs.created_by|lower%}
-          <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1">&#9940;</a>
-          <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1">&#9998;</a>
+              <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1">&#9940;</a>
+              <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1">&#9998;</a>
+          
           {% endif%}
+          
          </div>
          <div class="collapsible-body"><span>
             <h6>{{ jobs.job_description }}</h6>
@@ -73,6 +75,5 @@
   </div>
   {% endfor %}
 </div>
-
 
 {% endblock %}

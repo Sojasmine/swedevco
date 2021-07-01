@@ -1,9 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
+
+{% block styles %}
+<style>
+   body {
+     background-image: url('../static/images/image5.jpg');
+   }
+</style>
+{% endblock%}
+
 <!-- Headings on the registration page and paragraph -->
-<h4 class="center-align">Sign In</h4>
-<p class="center-align">Welcome back. Nice to see you again!</p>
+<h4 class="center-align white-text accent-3">Sign In</h4>
+<p class="center-align white-text accent-3">Welcome back. Nice to see you again!</p>
 
 <!-- Registration form -->
 <div class="row">
