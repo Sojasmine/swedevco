@@ -60,7 +60,7 @@
          <!--delete button-->
          <div class="col-s3">
           <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1">&#9940;</a>
-          <a href="#" class="waves-effect waves-light btn-small deep-purple accent-1">&#9998;</a>
+          <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1">&#9998;</a>
          </div>
       </li>
       <p class="center-align  blue-text darken-4"><em><strong>Posted by: {{ jobs.posted_by }}</strong></em></p>

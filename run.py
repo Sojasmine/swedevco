@@ -128,6 +128,13 @@ def post_jobs():
     return render_template("post_jobs.html", categories=categories)
 
 
+@app.route("/edit_jobs/<jobs_id>", methods=["GET", "POST"])
+def edit_jobs(jobs_id):
+    jobs = mongo.db.jobs.find_one({"_id": ObjectId(jobs_id)})
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_jobs.html", jobs=jobs, categories=categories)
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
