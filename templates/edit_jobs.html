@@ -4,7 +4,7 @@
 
 <!-- Headings on the registration page and paragraph -->
 <h4 class="center-align">Edit Jobs</h4>
-<p class="center-align">Share all the vacant developer jobs here!</p>
+
 
 <!--form for posting jobs-->
 <div class="row">
@@ -12,15 +12,15 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="about_the_company" name="about_the_company" type="text" class="validate" required>
-                <label for="about_the_company">Company</label>
+                <input id ="company" name="company" value="{{ jobs.company }}"  type="text" class="validate" required>
+                <label for="company">Company</label>
             </div>
         </div>
             <!--job title-->
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="job_title" name="job_title" type="text" class="validate" required>
+                <input id ="job_title" name="job_title" value="{{ jobs.job_title }}" type="text" class="validate" required>
                 <label for="job_title">Job Title</label>
             </div>
         </div>
@@ -28,7 +28,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="salary" name="salary" type="text" class="validate">
+                <input id ="salary" name="salary" value="{{ jobs.salary }}" type="text" class="validate">
                 <label for="salary">Salary</label>
             </div>
         </div>
@@ -37,9 +37,13 @@
                 <div class="input-field col s12">
                     <i class="tiny fas fa-caret-right prefix"></i>
                     <select id="category_name" name="category_name" class="validate" required>
-                      <option value="" disabled selected>Choose job type</option>
+                      <option value="" disabled>Choose job type</option>
                       {% for category in categories %}
+                      {% if category.category_name == jobs.category_name %}
+                       <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                          {% else %}
                           <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                          {% endif %}
                       {% endfor %}
                       </select>
                     <label for="category_name">Category</label>
@@ -50,7 +54,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="location" name="location" type="text" class="validate">
+                <input id ="location" name="location" value="{{ jobs.location }}" type="text" class="validate">
                 <label for="location">Location</label>
             </div>
         </div>
@@ -58,7 +62,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="job_description" name="job_description" class="materialize-textarea validate" required></textarea>
+                <textarea id="job_description" name="job_description" class="materialize-textarea validate" required>{{ jobs.job_description }}</textarea>
                 <label for="job_description">Job Description</label>
             </div>
         </div>
@@ -66,7 +70,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="experience" name="experience" class="materialize-textarea validate" required></textarea>
+                <textarea id="experience" name="experience" class="materialize-textarea validate" required>{{ jobs.experience }}</textarea>
                 <label for="experience">Experience</label>
             </div>
         </div>
@@ -74,7 +78,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="qualification" name="qualification" class="materialize-textarea validate" required></textarea>
+                <textarea id="qualification" name="qualification" class="materialize-textarea validate" required>{{ jobs.qualification }}</textarea>
                 <label for="qualification">Qualification</label>
             </div>
             </div>
@@ -82,7 +86,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="about_the_company" name="about_the_company" class="materialize-textarea validate" required></textarea>
+                    <textarea id="about_the_company" name="about_the_company" class="materialize-textarea validate" required>{{ jobs.about_the_company }}</textarea>
                     <label for="about_the_company">About The company</label>
                 </div>
                 </div>
@@ -90,7 +94,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="application" name="application" class="materialize-textarea validate" required></textarea>
+                    <textarea id="application" name="application" class="materialize-textarea validate" required>{{ jobs.application }}</textarea>
                     <label for="application">Application</label>
                 </div>
                 </div>
@@ -98,7 +102,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id="submit_date" name="submit_date" type="text" class="datepicker validate" required>
+                <input id="submit_date" name="submit_date"value="{{ jobs.submit_date }}" type="text" class="datepicker validate" required>
                 <label for="submit_date">Last submit Date</label>
             </div>
         </div>
