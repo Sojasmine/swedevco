@@ -27,7 +27,7 @@
     <ul class="collapsible popout">
       <li>
         <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
-        <div class="collapsible-body"><span>
+         <div class="collapsible-body"><span>
             <h6>{{ jobs.job_description }}</h6>
           </span>
 
@@ -57,9 +57,13 @@
           </div>
 
         </div>
-
+         <!--delete button-->
+         <div class="col-s3">
+          <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1">&#9940;</a>
+          <a href="#" class="waves-effect waves-light btn-small deep-purple accent-1">&#9998;</a>
+         </div>
       </li>
-      <p class="center-align"><em>Posted by: {{ jobs.posted_by }}</em></p>
+      <p class="center-align  blue-text darken-4"><em><strong>Posted by: {{ jobs.posted_by }}</strong></em></p>
 
     </ul>
 
