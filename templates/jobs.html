@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!--background image-->
 {% block styles %}
 <style>
    body {
@@ -9,14 +10,16 @@
 </style>
 {% endblock%}
 
+<!--heading and paragraph-->
 <h4 class="center-align white-text text-darken-2">Job lists</h4>
 <p class="center-align white-text text-darken-2">Find job here:</p>
 
+<!--Container-->
 
 </div>
 <div class="container">
   {% for jobs in jobs %}
-   4<div class="card-panel">
+    <div class="card-panel">
     <h3 class="center-align">
     <strong>{{ jobs.company }}</strong></h3>
     <p class="center-align"><strong>{{ jobs.job_title }}</strong></p>
@@ -27,17 +30,16 @@
     <ul class="collapsible popout">
       <li>
         <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
-        <!--delete button-->
+        <!--delete button here-->
         <div class="col-s3">
           {% if session.user|lower == jobs.created_by|lower%}
               <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1">&#9940;</a>
               <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1">&#9998;</a>
-          
-          {% endif%}
+          {% endif %}
           
          </div>
          <div class="collapsible-body"><span>
-            <h6>{{ jobs.job_description }}</h6>
+            <p>{{ jobs.job_description }}</p>
           </span>
           
           <div>

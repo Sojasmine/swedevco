@@ -77,7 +77,7 @@ def signin():
                 return redirect(url_for("signin"))
 
         else:
-            # username dpesn't exist
+            # username doesn't exist
             flash("Wrong Username and/or Password")
             return redirect(url_for("signin"))
 
@@ -145,12 +145,20 @@ def edit_jobs(jobs_id):
             "submit_date": request.form.get("submit_date"),
             "posted_by": session["user"]
         }
+
         mongo.db.jobs.update({"_id": ObjectId(jobs_id)}, submit)
         flash("Posts Successfully Updated")
 
     jobs = mongo.db.jobs.find_one({"_id": ObjectId(jobs_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_jobs.html", jobs=jobs, categories=categories)
+
+
+@app.route("/delete_jobs/<jobs_id>")
+def delete(jobs_id):
+    mongo.db.jobs.remove({"_id": ObjectId(jobs_id)})
+    flash("Post successfully deleted")
+    return redirect(url_for("get_jobs"))
 
 
 @app.route("/contact")

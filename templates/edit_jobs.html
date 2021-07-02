@@ -4,7 +4,6 @@
 <!-- Headings on the registration page and paragraph -->
 <h4 class="center-align">Edit Jobs</h4>
 
-
 <!--form for posting jobs-->
 <div class="row">
     <form class="col s12 m4 offset-m4" method="POST" action="{{ url_for('edit_jobs', jobs_id=jobs._id) }}">
@@ -61,7 +60,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="job_description" name="job_description" class="materialize-textarea validate" required>{{ jobs.job_description }}</textarea>
+                <textarea id="job_description" name="job_description" class="materialize-textarea validate" required>{{- jobs.job_description -}}</textarea>
                 <label for="job_description">Job Description</label>
             </div>
         </div>
@@ -69,7 +68,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="experience" name="experience" class="materialize-textarea validate" required>{{ jobs.experience }}</textarea>
+                <textarea id="experience" name="experience" class="materialize-textarea validate" required>{{- jobs.experience -}}</textarea>
                 <label for="experience">Experience</label>
             </div>
         </div>
@@ -77,7 +76,7 @@
             <div class="row">
             <div class="input-field col s12">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="qualification" name="qualification" class="materialize-textarea validate" required>{{ jobs.qualification }}</textarea>
+                <textarea id="qualification" name="qualification" class="materialize-textarea validate" required>{{- jobs.qualification -}}</textarea>
                 <label for="qualification">Qualification</label>
             </div>
             </div>
@@ -85,7 +84,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="about_the_company" name="about_the_company" class="materialize-textarea validate" required>{{ jobs.about_the_company }}</textarea>
+                    <textarea id="about_the_company" name="about_the_company" class="materialize-textarea validate" required>{{- jobs.about_the_company -}}</textarea>
                     <label for="about_the_company">About The company</label>
                 </div>
                 </div>
@@ -93,7 +92,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="application" name="application" class="materialize-textarea validate" required>{{ jobs.application }}</textarea>
+                    <textarea id="application" name="application" class="materialize-textarea validate" required>{{- jobs.application -}}</textarea>
                     <label for="application">Application</label>
                 </div>
                 </div>
@@ -119,7 +118,6 @@
         </div>
     </form>
 </div>
-
 
 
 {% endblock %}

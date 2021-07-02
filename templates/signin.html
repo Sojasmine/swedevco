@@ -40,19 +40,20 @@
             <!-- Sign up button-->
             <div class="row">
                 <button type="submit" class="col s12 btn small">
-                    Create account <i class="tiny fas fa-sign-in-alt"></i>
+                    Sign In <i class="tiny fas fa-sign-in-alt"></i>
                 </button>
             </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align">
+                        Don't  have an account?
+                        <a href="{{ url_for('register') }}">Create an Account</a>
+                    </p>
+                </div>
     </form>
 </div>
 
-<div class="row">
-    <div class="col s12">
-        <p class="center-align">
-            Don't  have an account?
-            <a href="{{ url_for('register') }}">Create an Account</a>
-        </p>
-    </div>
+
 </div>
 
 {% endblock %}

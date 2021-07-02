@@ -14,7 +14,7 @@
 
 <!-- Headings on the registration page and paragraph -->
 <h4 class="center-align">Create your account</h4>
-<p class="center-align">Please fill this form to create an account!</p>
+<p class="center-align"><strong>Please fill this form to create an account!</strong></p>
 
 <!-- Registration form -->
 <div class="row">
@@ -54,7 +54,7 @@
                     <label for="last_name">Last Name</label>
                 </div>
             </div>
-            <p class="center-align">&#9830; 5 characters minimum<br>
+            <p class="center-align">&#9830; 5 characters minimum for password and username<br>
                &#9830; Use letter from aA - zZ</p>
             <!-- Sign up button-->
             <div class="row">
@@ -62,16 +62,16 @@
                     Create account <i class="tiny fas fa-sign-in-alt"></i>
                 </button>
             </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align">
+                        Already have an account?
+                        <a href="{{ url_for('signin') }}">Sign In</a>
+                    </p>
+                </div>
     </form>
 </div>
 
-<div class="row">
-    <div class="col s12">
-        <p class="center-align">
-            Already have an account?
-            <a href="{{ url_for('signin') }}">Sign In</a>
-        </p>
-    </div>
 </div>
 
 {% endblock %}

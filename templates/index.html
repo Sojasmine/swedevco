@@ -2,13 +2,7 @@
 {% block content %}
 
 
-{% block styles %}
-<style>
-   body {
-     background-image: url('../static/images/image.jpg');
-   }
-</style>
-{% endblock%}
+
 
 
 <h4 class="center-align">Welcome to SwedevCo.</h4>
@@ -19,20 +13,20 @@
 <div class="center">
   <div class="col s4">
     <i class="medium fas fa-bolt pink-text lighten-2" aria-hidden="true"></i> 
-    <h2>Find Jobs</h2>
+    <h2><a href="{{ url_for('get_jobs') }}">Find Jobs</a></h2>
     <p>Search your dream work easily on our new site.</p>
-    <p>Here you can find job peosted by company or private person.</p>
+    <p>Here you can find job posted by company or private person.</p>
   </div>
 
   <div class="col s4">
     <i class="medium fas fa-user-friends pink-text lighten-2" aria-hidden="true"></i> 
-    <h2 class="text-black">Share</h2>
+    <h2><a href="{{ url_for('register') }}">Post jobs</a></h2>
     <p>As a registered user, you have a possibility to share job advertisement in our site.</p>
   </div>
 
   <div class="col s4">
     <i class="medium fa fa-cog pink-text lighten-2" aria-hidden="true"></i> 
-    <h2>Search</h2>
+    <h2><a href="#">Search</a></h2>
     <p>Search among the jobs in our search engine. </p>
 </div>
 
