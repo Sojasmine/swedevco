@@ -44,9 +44,9 @@
             <!--category name-->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="tiny fas fa-caret-right prefix"></i>
+                    <i class="tiny fas fa-caret-right prefix white-text"></i>
                     <select id="category_name" name="category_name" class="validate" required>
-                          <option value="" disabled>Choose job type</option>
+                    <option value="" disabled>Choose job type</option>
                       {% for category in categories %}
                           <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
                       {% endfor %}

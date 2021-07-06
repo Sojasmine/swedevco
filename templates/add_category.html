@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+{% block styles %}
+<style>
+   body {
+    background-image: url('../static/images/image4.jpg');
+   }
+</style>
+{% endblock%}
+ 
+
+<!-- Headings and paragraph -->
+<h4 class="center-align  white-text lighten-4">Add Category</h4>
+<p class="center-align white-text lighten-4">You can add new category here!</p>
+
+
+<div class="row">
+    <form class="col s12 m4 offset-m4" method="POST" action="{{ url_for('add_category') }}">
+        <!--Category name-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="tiny fas fa-caret-right prefix"></i>
+                <input id="category_name" name="category_name" minlength="3" maxlength="25" type="text" class="validate white-text" required>
+                <label for="category_name">Category Name</label>
+              </div>
+        </div>
+           
+<!-- post it button-->
+          <div class="row">
+            <button type="submit" class="col s12 btn small">
+                Add Category <i class="tiny fas fa-sign-in-alt"></i>
+            </button>
+        </div>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
