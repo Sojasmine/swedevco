@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!--background image-->
+{% block styles %}
+<style>
+   body {
+    background-image: url('../static/images/image7.jpg');
+   }
+</style>
+{% endblock%}
+
+
 <!-- User's profile display here  -->
 <div class="row">
     <div class="col s12 m4 offset-m4">
@@ -15,7 +25,7 @@
 </div>
 <hr>
 
-<h5 class="align center">My job list: </h5><br>
+<h5 class="align center white-text">My job list: </h5><br>
 <!--list of jobs posted by user-->
 <div class="container">
   {% for jobs in jobs %}
@@ -94,18 +104,6 @@
   {% endfor %}
 </div>
 
- <!-- post it button-->
- <div class="row">
-    <div class="col s12 center-align">
-        <!-- cancel button -->
-        <a href="{{ url_for('get_jobs') }}" class="waves-effect waves-light btn-small light-blue lighten-1">
-            Cancel <i class="fas fa-times-circle right"></i>
-            </a>
-             <!--Adit button-->
-        <button type="submit" class="waves-effect waves-light btn-small deep-purple accent-1">
-            Edit Task <i class="fas fa-edit right"></i>
-    </button>
-</div>
-</div>
+ 
 
 {% endblock %}
