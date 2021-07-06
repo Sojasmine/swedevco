@@ -34,23 +34,25 @@
                     
                     <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All
                             Jobs</a></li>
-                            {% if session.user %}
+                {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
                                 aria-hidden="true"></i> Profile</a></li>
                     <li><a href="{{ url_for('post_jobs') }}"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post
                             Jobs</a></li>
-                    <li><a href="#"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('get_categories') }}"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
+                {% endif %}
                     <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i>
                             Signout</a></li>
 
-                    {% else %}
+                {% else %}
                     <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i>
                             Signin</a></li>
                     <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt"
                                 aria-hidden="true"></i>Register </a></li>
                     <li><a href="{{ url_for('contact') }}"><i class="tiny fa fa-envelope"
                                 aria-hidden="true"></i>Contact</a></li>
-                    {% endif%}
+                {% endif%}
                 </ul>
             </div>
         </nav>
@@ -62,23 +64,25 @@
             <li><a href="{{ url_for('index') }}"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
             <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All Jobs</a>
             </li>
-            {% if session.user %}
+        {% if session.user %}
             <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
                         aria-hidden="true"></i> Profile</a></li>
             <li><a href="{{ url_for('post_jobs') }}"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a>
             </li>
-            <li><a href="#"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
+        {% if session.user|lower == "admin"|lower %}
+            <li><a href="{{ url_for('get_categories') }}"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
+        {% endif %}
             <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a>
             </li>
 
-            {% else %}
+        {% else %}
             <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Signin</a>
             </li>
             <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt" aria-hidden="true"></i>Register </a>
             </li>
             <li><a href="{{ url_for('contact') }}"><i class="tiny fa fa-envelope" aria-hidden="true"></i>Contact</a>
             </li>
-            {% endif %}
+        {% endif %}
         </ul>
 
     </head>
@@ -110,9 +114,9 @@
               <h5 class="white-text">Social links</h5>
               <div class="container">
               <a href="https://www.facebook.com/">
-                    <i class="tiny fab fa-facebook-square"></i>
+                <i class="tiny fab fa-facebook-square"></i>
                 </a>
-                <a href="https://www.linkedin.com/home">
+                <a href="https://www.linkedin.com/">
                     <i class="tiny fab fa-linkedin"></i>
                 </a>
             </div>
