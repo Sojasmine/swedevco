@@ -5,7 +5,7 @@
 {% block styles %}
 <style>
    body {
-     background-image: url('../static/images/image2.jpg');
+    background-image: url('../static/images/image7.jpg');
    }
 </style>
 {% endblock%}
@@ -32,9 +32,9 @@
         <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
         <!--delete button here-->
         <div class="col-s3">
-          {% if session.user|lower == jobs.created_by|lower%}
-              <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1">&#9940;</a>
-              <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1">&#9998;</a>
+          {% if session.user|lower == jobs.posted_by|lower %}
+              <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1 tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
+              <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1 tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
           {% endif %}
           
          </div>

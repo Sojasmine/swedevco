@@ -91,7 +91,9 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        # jobs posted by the user appear in user's profile
+        jobs = list(mongo.db.jobs.find().sort("_id, -1"))
+        return render_template("profile.html", username=username, jobs=jobs)
 
     return redirect(url_for("signin"))
 

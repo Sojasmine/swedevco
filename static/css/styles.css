@@ -85,10 +85,19 @@
   }
 
 
-  .column {
-    float: right;
-    width: 33.33%;
-    padding: 5px;
-    
-  }
+
+  /* footer*/
   
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+.page-footer {
+  background: linear-gradient(#33b2e4, #ee4fcc);
+}

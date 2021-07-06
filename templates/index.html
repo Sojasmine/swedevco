@@ -2,20 +2,27 @@
 {% block content %}
 
 
+{% block styles %}
+<style>
+   body {
+    background-image: url('https://pixabay.com/sv/illustrations/analytics-information-innovation-3088958/');
+   }
+</style>
+{% endblock%}
 
 
-
+<!-- heading and paragraph-->
 <h4 class="center-align">Welcome to SwedevCo.</h4>
 <p class="center">You can find all the <strong>Tech</strong> jobs available in Sweden in our plattform.</p>
 
 <br>
-
+<!--content-->
 <div class="center">
   <div class="col s4">
     <i class="medium fas fa-bolt pink-text lighten-2" aria-hidden="true"></i> 
     <h2><a href="{{ url_for('get_jobs') }}">Find Jobs</a></h2>
-    <p>Search your dream work easily on our new site.</p>
-    <p>Here you can find job posted by company or private person.</p>
+    <p>Find your dream job now!.</p>
+    <p>Here you can find  job posted by your next emplyer or your next colleague.</p>
   </div>
 
   <div class="col s4">
@@ -27,7 +34,7 @@
   <div class="col s4">
     <i class="medium fa fa-cog pink-text lighten-2" aria-hidden="true"></i> 
     <h2><a href="#">Search</a></h2>
-    <p>Search among the jobs in our search engine. </p>
+    <p>You can search of jobs online to find the next step in your career.</p>
 </div>
 
 {% endblock %}

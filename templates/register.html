@@ -34,7 +34,7 @@
                 <div class="input-field col s12">
                     <i class="tiny fas fa-user-lock prefix"></i>
                     <input id="password" name="password" type="password" minlength="5" 
-                        maxlenght="15" pattern="^[a-zA-Z0-9]{5-15}$" class="validate" required>
+                        pattern="^[a-zA-Z0-9]{5-15}$" class="validate" required>
                     <label for="password">Password</label>
                 </div>
             </div>
@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-user prefix"></i>
-                    <input placeholder="last_name" name="last_name" type="text" class="validate" required>
+                    <input placeholder="last_name" name="last_name" id="last_name" type="text" class="validate" required>
                     <label for="last_name">Last Name</label>
                 </div>
             </div>
@@ -69,9 +69,11 @@
                         <a href="{{ url_for('signin') }}">Sign In</a>
                     </p>
                 </div>
+            </div>
+            </div>
     </form>
 </div>
 
-</div>
+
 
 {% endblock %}
