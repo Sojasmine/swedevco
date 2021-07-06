@@ -14,11 +14,11 @@
 <div class="row">
     {% for category in categories %}
     <div class="col s12 m3">
-      <div class="card-panel teal center-align">
+      <div class="card-panel solid center-align">
         <span class="card-title">{{ category.category_name}}</span>
       <div class="card-action"><br>
           <a href="" class="waves-effect waves-light btn-small light-blue lighten-1 tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
-          <a href="" class="waves-effect waves-light btn-small deep-purple accent-1 tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
+          <a href="{{ url_for('edit_category', category_id=category._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1 tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
       </div>
     </div>
     </div>

@@ -105,3 +105,15 @@
 .page-footer {
   background: linear-gradient(#33b2e4, #ee4fcc);
 }
+
+ /* border for the card-panel in categories*/
+.solid {
+  border: 2mm ridge rgba(170, 50, 220, .6);
+  box-shadow: 0 0 0 0.4rem skyblue;
+  border-radius: 4px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+ 
+}
