@@ -157,7 +157,7 @@ def edit_jobs(jobs_id):
 
 
 @app.route("/delete_jobs/<jobs_id>")
-def delete(jobs_id):
+def delete_jobs(jobs_id):
     mongo.db.jobs.remove({"_id": ObjectId(jobs_id)})
     flash("Post successfully deleted")
     return redirect(url_for("get_jobs"))

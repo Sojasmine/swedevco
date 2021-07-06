@@ -15,60 +15,72 @@
 <p class="center-align white-text text-darken-2">Find job here:</p>
 
 <!--Container-->
-
 <div class="container">
   {% for jobs in jobs %}
     <div class="card-panel">
     <h3 class="center-align">
+      <!--Company-->
     <strong>{{ jobs.company }}</strong></h3>
+     <!--Job title-->
     <p class="center-align"><strong>{{ jobs.job_title }}</strong></p>
+     <!--Salary-->
     <p class="center-align">{{ jobs.salary }}</p>
+     <!--Category name-->
     <p class="center-align">{{ jobs.category_name }}</p>
+     <!--Location-->
     <p class="center-align">{{ jobs.location }}</p>
 
     <ul class="collapsible popout">
       <li>
         <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
-        <!--delete button here-->
+        <!--delete button-->
         <div class="col-s3">
           {% if session.user|lower == jobs.posted_by|lower %}
-              <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1 tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
-              <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1 tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
-          {% endif %}
+          <a href="{{ url_for('delete_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small light-blue lighten-1 tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
+          <!--Edit button-->
+          <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1 tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
+      {% endif %}
           
          </div>
          <div class="collapsible-body"><span>
+            <!--Job description-->
             <p>{{ jobs.job_description }}</p>
           </span>
           
           <div>
+             <!--Experience-->
             <h6><strong>Experience:</strong></h6>
             <p>{{ jobs.experience }}</p>
           </div>
 
           <div>
             <h6><strong>Qualification:</strong></h6>
+             <!--Qualification-->
             <p>{{ jobs.qualification }}</p>
           </div>
 
           <div>
             <h6><strong>About the Company:</strong></h6>
+             <!--About the company-->
             <p>{{ jobs.about_the_company }}</p>
           </div>
 
           <div>
             <h6><strong>Application:</strong></h6>
+             <!--Application-->
             <p>{{ jobs.application }}</p>
           </div>
 
           <div>
             <h6><strong>Last Submit Date:</strong></h6>
+             <!--Submit date-->
             <p>{{ jobs.submit_date }}</p>
           </div>
 
         </div>
         
       </li>
+       <!--Username-->
       <p class="center-align  blue-text darken-4"><em><strong>Posted by: {{ jobs.posted_by }}</strong></em></p>
 
     </ul>
