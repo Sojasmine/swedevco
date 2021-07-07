@@ -5,16 +5,16 @@
 {% block styles %}
 <style>
    body {
-    background-image: url('../static/images/image7.jpg');
+    background-image: url('../static/images/img10.jpg');
    }
 </style>
 {% endblock%}
-
+ 
 
 <!-- User's profile display here  -->
 <div class="row">
     <div class="col s12 m4 offset-m4">
-        <div class="card-panel  blue lighten-4">
+        <div class="card-panel blue-grey lighten-2">
             <h4 class="center-align white">
 
                 {{ username }}
@@ -25,7 +25,7 @@
 </div>
 <hr>
 
-<h5 class="align center white-text">My job list: </h5><br>
+<h5 class="align center black-text">My job list: </h5><br>
 <!--list of jobs posted by user-->
 <div class="container">
   {% for jobs in jobs %}
@@ -46,13 +46,13 @@
     <ul class="collapsible popout">
       <li>
           
-        <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
+        <div class="collapsible-header  blue-grey lighten-2"><strong>Job Description</strong></div>
         <!--delete button-->
         <div class="col-s3">
           {% if session.user|lower == jobs.posted_by|lower %}
-              <a href="#" class="waves-effect waves-light btn-small light-blue lighten-1 tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
+              <a href="#" class="waves-effect waves-light btn-small black tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
                 <!--edit button-->
-              <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1 tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
+              <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small black tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
           {% endif %}
           
          </div>

@@ -1,50 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
 
-
+<!--background image-->
 {% block styles %}
 <style>
    body {
-    background-image: url('../static/images/image4.jpg');
+    background-image: url('../static/images/img13.jpg');
    }
-</style>
+    p span {
+       background-color: skyblue;
+   }
+  </style>
 {% endblock%}
- 
+
 
 <!-- Headings on the registration page and paragraph -->
-<h4 class="center-align  white-text lighten-4">Post Jobs</h4>
-<p class="center-align white-text lighten-4">Share all the vacant developer jobs here!</p>
+
+<h4 class="center-align">Post Jobs</h4>
+<p class="center-align"><strong><span>Share all the vacant developer jobs here!</span></strong></p>
 
 <!--form for posting jobs-->
 <div class="row">
     <form class="col s12 m4 offset-m4" method="POST" action="{{ url_for('post_jobs') }}">
         <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="company" name="company" type="text" class="validate white-text lighten-4" required>
+                <input id ="company" name="company" type="text" class="validate black-text lighten-4" required>
                 <label for="company">Company</label>
             </div>
         </div>
             <!--job title-->
             <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="job_title" name="job_title" type="text" class="validate white-text lighten-4" required>
+                <input id ="job_title" name="job_title" type="text" class="validate black-text lighten-4" required>
                 <label for="job_title">Job Title</label>
             </div>
         </div>
             <!--salary-->
             <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="salary" name="salary" type="text" class="validate white-text lighten-4">
+                <input id ="salary" name="salary" type="text" class="validate black-text lighten-4">
                 <label for="salary">Salary</label>
             </div>
         </div>
             <!--category name-->
             <div class="row">
-                <div class="input-field col s12">
-                    <i class="tiny fas fa-caret-right prefix white-text"></i>
+                <div class="input-field col s12 white">
+                    <i class="tiny fas fa-caret-right prefix"></i>
                     <select id="category_name" name="category_name" class="validate" required>
                     <option value="" disabled>Choose job type</option>
                       {% for category in categories %}
@@ -57,57 +61,57 @@
         </div>
             <!--location-->
         <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id ="location" name="location" type="text" class="validate white-text lighten-4">
+                <input id ="location" name="location" type="text" class="validate black-text lighten-4">
                 <label for="location">Location</label>
             </div>
         </div>
             <!--job descritpion-->
             <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="job_description" name="job_description" class="materialize-textarea validate white-text lighten-4" required></textarea>
+                <textarea id="job_description" name="job_description" class="materialize-textarea validate black-text lighten-4" required></textarea>
                 <label for="job_description">Job Description</label>
             </div>
         </div>
             <!--experience-->
             <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="experience" name="experience" class="materialize-textarea validate white-text lighten-4" required></textarea>
+                <textarea id="experience" name="experience" class="materialize-textarea validate black-text lighten-4" required></textarea>
                 <label for="experience">Experience</label>
             </div>
         </div>
             <!--qualification-->
             <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <textarea id="qualification" name="qualification" class="materialize-textarea validate white-text lighten-4" required></textarea>
+                <textarea id="qualification" name="qualification" class="materialize-textarea validate black-text lighten-4" required></textarea>
                 <label for="qualification">Qualification</label>
             </div>
             </div>
             <!--About the company-->
             <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 white">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="company" name="company" class="materialize-textarea validate white-text lighten-4" required></textarea>
+                    <textarea id="company" name="company" class="materialize-textarea validate black-text lighten-4" required></textarea>
                     <label for="company">About The company</label>
                 </div>
                 </div>
             <!--application-->
             <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 white">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="application" name="application" class="materialize-textarea validate white-text lighten-4" required></textarea>
+                    <textarea id="application" name="application" class="materialize-textarea validate black-text lighten-4" required></textarea>
                     <label for="application">Application</label>
                 </div>
                 </div>
             <!-- last submit date -->
         <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id="submit_date" name="submit_date" type="text" class="datepicker validate white-text lighten-4" required>
+                <input id="submit_date" name="submit_date" type="text" class="datepicker validate black-text lighten-4" required>
                 <label for="submit_date">Last submit Date</label>
             </div>
         </div>

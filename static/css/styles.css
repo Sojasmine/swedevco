@@ -17,8 +17,8 @@
   
   .brand-logo b{
     font: 100 6vh "Akronim";
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #0c0c0c, 0 10px 3px #000;
+    color: #fff;
+    text-shadow:  0 -40px 100px, 0 0 2px, 0 0 1em rgb(223, 14, 14), 0 0 0.5em rgb(252, 41, 51), 0 0 0.1em #0c0c0c, 0 10px 3px #000;
   }
   .brand-logo b span{
     animation: blink linear infinite 2s;
@@ -43,7 +43,7 @@
       text-shadow: inherit;
     }
     82% {
-      color: #333;
+      color: #333;;
       text-shadow: none;
     }
     83% {
@@ -62,13 +62,15 @@
   
 /* code for navbar background color*/
 .nav-wrapper {
-    background: linear-gradient(#33b2e4, #ee4fcc);
+    background: black;
   }
 
   h3 {
     color: #ee4fcc
   }
   
+
+
 /* code for icons */
 .tiny {
     color: skyblue;
@@ -76,7 +78,7 @@
   
   /* Code for the sign up button */
 .btn {
-    background-image: linear-gradient(to right, #790758 0%, #0e60ee 51%, #f51fb8 100%);
+     background-color: black;
   }
   
    /* Code for the flash messages */
@@ -103,12 +105,12 @@
   }
       
 .page-footer {
-  background: linear-gradient(#33b2e4, #ee4fcc);
+  background: black;
 }
 
  /* border for the card-panel in categories*/
 .solid {
-  border: 2mm ridge rgba(170, 50, 220, .6);
+  border: 2mm ridge rgba(7, 0, 7, 0.6);
   box-shadow: 0 0 0 0.4rem skyblue;
   border-radius: 4px;
   font: bold 1rem sans-serif;

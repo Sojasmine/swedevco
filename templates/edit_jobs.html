@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
+
+<!--background image-->
+{% block styles %}
+<style>
+   body {
+    background-image: url('../static/images/img14.jpg');
+   }
+</style>
+{% endblock%}
 <!-- Headings on the registration page and paragraph -->
 <h4 class="center-align">Edit Jobs</h4>
 
@@ -108,10 +117,10 @@
           <div class="row">
             <div class="col s12 center-align">
                 <!-- cancel button -->
-                <a href="{{ url_for('get_jobs') }}" class="waves-effect waves-light btn-small light-blue lighten-1">
+                <a href="{{ url_for('get_jobs') }}" class="waves-effect waves-light btn-small black">
                     Cancel <i class="fas fa-times-circle right"></i>
                     </a>
-                <button type="submit" class="waves-effect waves-light btn-small deep-purple accent-1">
+                <button type="submit" class="waves-effect waves-light btn-small black">
                     Edit Task <i class="fas fa-edit right"></i>
             </button>
         </div>

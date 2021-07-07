@@ -5,14 +5,18 @@
 {% block styles %}
 <style>
    body {
-    background-image: url('../static/images/image8.png');
+    background-image: url('../static/images/img8.jpg');
+   }
+   p span {
+       background-color: skyblue;
    }
 </style>
 {% endblock%}
 
 <!--heading and paragraph-->
-<h4 class="center-align white-text text-darken-2">Job lists</h4>
-<p class="center-align white-text text-darken-2">Find job here:</p>
+<h4 class="center-align black-text"><strong>Job lists:</strong></h4>
+<p class="center-align"><strong><span>All jobs posted by users!</span></strong></p>
+
 
 <!--Container-->
 <div class="container">
@@ -24,21 +28,21 @@
      <!--Job title-->
     <p class="center-align"><strong>{{ jobs.job_title }}</strong></p>
      <!--Salary-->
-    <p class="center-align">{{ jobs.salary }}</p>
+    <p class="center-align"><i class="fa fa-money-bill-wave"></i> {{ jobs.salary }}</p>
      <!--Category name-->
     <p class="center-align">{{ jobs.category_name }}</p>
      <!--Location-->
-    <p class="center-align">{{ jobs.location }}</p>
+    <p class="center-align"><i class="fa fa-map-marker-alt"></i> {{ jobs.location }}</p>
 
     <ul class="collapsible popout">
       <li>
-        <div class="collapsible-header light  blue lighten-3"><strong>Job Description</strong></div>
+        <div class="collapsible-header  blue-grey lighten-2"><strong>Job Description</strong></div>
         <!--delete button-->
         <div class="col-s3">
           {% if session.user|lower == jobs.posted_by|lower %}
-          <a href="{{ url_for('delete_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small light-blue lighten-1 tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
+          <a href="{{ url_for('delete_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small black lighten-1 tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
           <!--Edit button-->
-          <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small deep-purple accent-1 tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
+          <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small black tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
       {% endif %}
      
          </div>
@@ -81,7 +85,7 @@
         
       </li>
        <!--Username-->
-      <p class="center-align  blue-text darken-4"><em><strong>Posted by: {{ jobs.posted_by }}</strong></em></p>
+      <p class="center-align  blue-text darken-4"><em><strong>Posted by:</em> {{ jobs.posted_by }}</strong></p>
 
     </ul>
 

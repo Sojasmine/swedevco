@@ -5,15 +5,15 @@
 {% block styles %}
 <style>
    body {
-    background-image: url('https://pixabay.com/sv/illustrations/analytics-information-innovation-3088958/');
+    background-image: url('../static/images/img01.jpg');
    }
 </style>
 {% endblock%}
 
 
 <!-- heading and paragraph-->
-<h4 class="center-align">Welcome to SwedevCo.</h4>
-<p class="center">You can find all the <strong>Tech</strong> jobs available in Sweden in our plattform.</p>
+<h4 class="center-align"><strong>Welcome to SwedevCo.</strong></h4>
+<p class="center"><strong>You can find all the Tech jobs available in Sweden in our plattform.</strong></p>
 
 <br>
 <!--content-->
@@ -21,23 +21,23 @@
   <div class="col s4">
     <i class="medium fas fa-bolt pink-text lighten-2" aria-hidden="true"></i> 
     <h2>Find Jobs</h2>
-    <p>Find your dream job now!.</p>
-    <p>Here you can find  job posted by your next emplyer or your next colleague.</p>
-    <a href="{{ url_for('register') }}" class="waves-effect waves-light btn-small light-blue lighten-1">
-      Register now, it is free!
+    <p><strong>Find your dream job now!.</strong></p>
+    <p><strong>Here you can find  job posted by your next employer or your next colleague.</strong></p>
+    <a href="{{ url_for('register') }}" class="waves-effect waves-light btn-small light-blue lighten-3 black-text">
+     <strong> Register now, it is free!</strong>
       </a>
   </div><br>
 
   <div class="col s4">
     <i class="medium fas fa-user-friends pink-text lighten-2" aria-hidden="true"></i> 
-    <h2><a href="{{ url_for('register') }}">Post jobs</a></h2>
-    <p>As a registered user, you have a possibility to share job advertisement in our site.</p>
+    <h2>Post jobs</h2>
+    <p><strong>As a registered user, you have a possibility to share job advertisement in our site.</strong></p>
   </div>
 
   <div class="col s4">
     <i class="medium fa fa-cog pink-text lighten-2" aria-hidden="true"></i> 
-    <h2><a href="#">Search</a></h2>
-    <p>You can search of jobs online to find the next step in your career.</p>
+    <h2>Search</h2>
+    <p><strong>You can search of jobs online to find the next step in your career.</strong></p>
 </div>
 
 {% endblock %}
