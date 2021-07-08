@@ -1,6 +1,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Akronim');
 
-  /* Code for the logo snippet from https://codepen.io/nodws/pen/bdjwn */
+/* Code for the logo snippet from https://codepen.io/nodws/pen/bdjwn */
 .brand-logo h4{
     text-align: left;
     width: 45%;
@@ -73,16 +73,24 @@
 
 /* code for icons */
 .tiny {
-    color: skyblue;
+  color: skyblue;
   }
+ 
   
-  /* Code for the sign up button */
+/* Social media icons */
+.small {
+  color: skyblue;
+  }
+
+
+/* Code for the sign up button */
 .btn {
      background-color: black;
   }
   
-   /* Code for the flash messages */
-   .flashes h6 {
+
+/* Code for the flash messages */
+   .flashes h5 {
     border: 2px solid #f51fb8;
     padding: 10px;
     border-radius: 20px 20px;
@@ -90,7 +98,7 @@
   }
  
 
-  /* border for the card-panel in categories*/
+/* border for the card-panel in categories*/
 .solid {
   border: 2mm ridge rgba(7, 0, 7, 0.6);
   box-shadow: 0 0 0 0.2rem skyblue;
@@ -101,7 +109,22 @@
   outline-offset: 0.5rem;
 }
 
- /* footer*/
+
+/* modal delete button*/
+#modal1 {
+  border: dashed black;
+}
+
+.modal {
+  padding: 30px 50px;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/* footer*/
   
   body {
     display: flex;

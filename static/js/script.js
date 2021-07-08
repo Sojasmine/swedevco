@@ -6,6 +6,7 @@ $('.collapsible').collapsible();
 $('input#input_text, textarea#textarea2').characterCounter();
 $('select').formSelect();
 $('.tooltipped').tooltip();
+$('.modal').modal();
 $('.datepicker').datepicker({
     format: "dd mmm, yyyy",
     yearRange: 3,
