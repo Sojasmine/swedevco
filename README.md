@@ -73,6 +73,7 @@ The aim of the project was to create a simple community jobs board that included
 #### Post Job Page
 
 #### Profile Page
+
 Large hero image with someone pointing to their phone to clearly show what the page is for
 
 Text which welcomes the user to their profile page and displays their username
@@ -88,11 +89,13 @@ Delete modal pops up if a user wants to delete a job, asking for confirmation th
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
 
 #### Edit Job Page
+
 Once the edit button is clicked the user is taken back to the same form for when they posted the job and they are able to update any details they need to
 
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
 
 #### Sign In Page
+
 Allows the user to sign in to their account
 
 Link to registration page if the user does not already have an account

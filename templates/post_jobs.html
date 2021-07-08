@@ -20,8 +20,9 @@
 <p class="center-align"><strong><span>Share all the vacant developer jobs here!</span></strong></p>
 
 <!--form for posting jobs-->
+
 <div class="row">
-    <form class="col s12 m4 offset-m4" method="POST" action="{{ url_for('post_jobs') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('post_jobs') }}">
         <div class="row">
             <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
@@ -95,8 +96,8 @@
             <div class="row">
                 <div class="input-field col s12 white">
                     <i class="tiny fas fa-caret-right prefix"></i>
-                    <textarea id="company" name="company" class="materialize-textarea validate black-text lighten-4" required></textarea>
-                    <label for="company">About The company</label>
+                    <textarea id="about_the_company" name="about_the_company" class="materialize-textarea validate black-text lighten-4" required></textarea>
+                    <label for="about_the_company">About The company</label>
                 </div>
                 </div>
             <!--application-->
@@ -124,6 +125,7 @@
         </div>
     </form>
 </div>
+
 
 
 {% endblock %}

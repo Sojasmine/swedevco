@@ -16,7 +16,7 @@
  }
   
   .brand-logo b{
-    font: 100 6vh "Akronim";
+    font: 100 4vh "Akronim";
     color: #fff;
     text-shadow:  0 -40px 100px, 0 0 2px, 0 0 1em rgb(223, 14, 14), 0 0 0.5em rgb(252, 41, 51), 0 0 0.1em #0c0c0c, 0 10px 3px #000;
   }
@@ -88,9 +88,18 @@
     border-radius: 20px 20px;
     
   }
-  #category_name {
-    color: white;
-  }
+ 
+
+  /* border for the card-panel in categories*/
+.solid {
+  border: 2mm ridge rgba(7, 0, 7, 0.6);
+  box-shadow: 0 0 0 0.2rem skyblue;
+  border-radius: 2px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+}
 
  /* footer*/
   
@@ -108,14 +117,4 @@
   background: black;
 }
 
- /* border for the card-panel in categories*/
-.solid {
-  border: 2mm ridge rgba(7, 0, 7, 0.6);
-  box-shadow: 0 0 0 0.4rem skyblue;
-  border-radius: 4px;
-  font: bold 1rem sans-serif;
-  margin: 2rem;
-  padding: 1rem;
-  outline-offset: 0.5rem;
  
-}

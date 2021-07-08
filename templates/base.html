@@ -32,7 +32,7 @@
                     <li><a href="{{ url_for('index') }}"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a>
                     </li>
                     
-                    <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All
+                    <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-tasks " aria-hidden="true"></i> All
                             Jobs</a></li>
                 {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
@@ -62,7 +62,7 @@
                 <h4 class="center-align"></h4>SwedevCo
             </li>
             <li><a href="{{ url_for('index') }}"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
-            <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-film " aria-hidden="true"></i> All Jobs</a>
+            <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-tasks " aria-hidden="true"></i> All Jobs</a>
             </li>
         {% if session.user %}
             <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
