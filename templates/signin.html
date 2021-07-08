@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-
+<!--background image-->
 {% block styles %}
 <style>
-   body {
-     background-image: url('../static/images/img0.jpg');
-   }
+    body {
+        background-image: url('../static/images/img0.jpg');
+    }
 </style>
 {% endblock%}
 
@@ -17,14 +17,14 @@
 <!-- Registration form -->
 
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST"  action="{{ url_for('signin') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('signin') }}">
         <div class="card-panel">
             <!-- username -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-user-circle prefix"></i>
-                    <input id="username" name="username" type="text" minlength="5"
-                         maxlength="15" pattern="^[a-zA-Z0-9]{5-15}$" class="validate" required>
+                    <input id="username" name="username" type="text" minlength="5" maxlength="15"
+                        pattern="^[a-zA-Z0-9]{5-15}$" class="validate" required>
                     <label for="username">Username</label>
                 </div>
             </div>
@@ -32,12 +32,12 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="tiny fas fa-user-lock prefix"></i>
-                    <input id="password" name="password" type="password" minlength="5" 
-                        pattern="^[a-zA-Z0-9]{5-15}$" class="validate" required>
+                    <input id="password" name="password" type="password" minlength="5" pattern="^[a-zA-Z0-9]{5-15}$"
+                        class="validate" required>
                     <label for="password">Password</label>
                 </div>
             </div>
-            
+
             <!-- Sign up button-->
             <div class="row">
                 <button type="submit" class="col s12 btn small">
@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col s12">
                     <p class="center-align">
-                        Don't  have an account?
+                        Don't have an account?
                         <a href="{{ url_for('register') }}">Create an Account</a>
                     </p>
                 </div>

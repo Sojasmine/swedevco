@@ -4,41 +4,41 @@
 
 {% block styles %}
 <style>
-   body {
-    background-image: url('../static/images/img5.jpg');
-   }
-   
-   p span {
-       background-color: skyblue;
-   }
+    body {
+        background-image: url('../static/images/img5.jpg');
+    }
+
+    p span {
+        background-color: skyblue;
+    }
 </style>
 {% endblock%}
- 
+
 
 <!-- Headings and paragraph -->
 <h4 class="center-align  white-text lighten-4">Add Category</h4>
 <p class="center-align"><strong><span>Add new category here!</span></strong></p>
 
-
+<!--Category name-->
 <div class="row">
     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_category') }}">
-        <!--Category name-->
-        <div class="row">
+       <div class="row">
             <div class="input-field col s12 white">
                 <i class="tiny fas fa-caret-right prefix"></i>
-                <input id="category_name" name="category_name" minlength="3" maxlength="25" type="text" class="validate black-text" required>
+                <input id="category_name" name="category_name" minlength="3" maxlength="25" type="text"
+                    class="validate black-text" required>
                 <label for="category_name">Category Name</label>
-              </div>
+            </div>
         </div>
-           
-<!-- post it button-->
-          <div class="row">
+
+        <!-- post it button-->
+        <div class="row">
             <button type="submit" class="col s12 btn small">
                 Add Category <i class="tiny fas fa-sign-in-alt"></i>
             </button>
         </div>
-        </div>
-    </form>
+</div>
+</form>
 </div>
 
 

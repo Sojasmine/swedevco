@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content%}
 
+ <!--Heading-->
 <h4 class="center-align black-text">Manage Categories</h4><br>
 <hr>
 <div class="row">
@@ -11,32 +12,37 @@
   </div>
 </div>
 <div class="container">
-<div class="row">
+  <div class="row">
     {% for category in categories %}
     <div class="col s12">
       <div class="card-panel solid center-align">
         <span class="card-title">{{ category.category_name}}</span>
-      <div class="card-action"><br>
-                    <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger tooltipped" data-position="bottom" data-tooltip="delete" href="#modal1">&#9940;</a>
-  
-  <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <p class="red-text darken-3">Are you sure you want to delete this category?</p>
+        <div class="card-action"><br>
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger tooltipped" data-position="bottom" data-tooltip="delete"
+            href="#modal1">&#9940;</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <p class="red-text darken-3">Are you sure you want to delete this category?</p>
+            </div>
+            <div class="modal-footer">
+              <a href="{{ url_for('delete_category', category_id=category._id) }}"
+                class="waves-effect waves-light btn-small blue lighten-1">Yes, delete</a>
+              <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn-small green lighten-1">No,
+                Cancel</a>
+            </div>
           </div>
-      <div class="modal-footer">
-        <a href="{{ url_for('delete_category', category_id=category._id) }}" class="waves-effect waves-light btn-small blue lighten-1">Yes, delete</a>
-        <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn-small green lighten-1">No, Cancel</a>
+          <!--Edit button-->
+          <a href="{{ url_for('edit_category', category_id=category._id) }}"
+            class="waves-effect waves-light btn modal-trigger tooltipped" data-position="bottom"
+            data-tooltip="edit">&#9998;</a>
+        </div>
       </div>
     </div>
-  <!--Edit button-->
-      <a href="{{ url_for('edit_category', category_id=category._id) }}" class="waves-effect waves-light btn modal-trigger tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
-       </div>
-    </div>
-    </div>
     {% endfor %}
-</div>
+  </div>
 </div>
 
 

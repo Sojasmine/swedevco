@@ -4,24 +4,24 @@
 <!--background image-->
 {% block styles %}
 <style>
-   body {
+  body {
     background-image: url('../static/images/img10.jpg');
-   }
+  }
 </style>
 {% endblock%}
- 
+
 
 <!-- User's profile display here  -->
 <div class="row">
-    <div class="col s12 m4 offset-m4">
-        <div class="card-panel blue-grey lighten-2">
-            <h4 class="center-align white">
+  <div class="col s12 m4 offset-m4">
+    <div class="card-panel blue-grey lighten-2">
+      <h4 class="center-align white">
 
-                {{ username }}
+        {{ username }}
 
-            </h4>
-        </div>
+      </h4>
     </div>
+  </div>
 </div>
 <hr>
 
@@ -30,37 +30,55 @@
 <div class="container">
   {% for jobs in jobs %}
   {% if session.user|lower == jobs.posted_by|lower %}
-    <div class="card-panel">
+  <div class="card-panel">
     <h3 class="center-align">
       <!--Company-->
-    <strong>{{ jobs.company }}</strong></h3>
+      <strong>{{ jobs.company }}</strong></h3>
     <!--Job title-->
     <p class="center-align"><strong>{{ jobs.job_title }}</strong></p>
-      <!--Salary-->
+    <!--Salary-->
     <p class="center-align">{{ jobs.salary }}</p>
-      <!--Category name-->
+    <!--Category name-->
     <p class="center-align">{{ jobs.category_name }}</p>
-      <!--Location-->
+    <!--Location-->
     <p class="center-align">{{ jobs.location }}</p>
 
     <ul class="collapsible popout">
       <li>
-          
+
         <div class="collapsible-header  blue-grey lighten-2"><strong>Job Description</strong></div>
         <!--delete button-->
         <div class="col-s3">
           {% if session.user|lower == jobs.posted_by|lower %}
-              <a href="#" class="waves-effect waves-light btn-small black tooltipped" data-position="bottom" data-tooltip="delete">&#9940;</a>
-                <!--edit button-->
-              <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}" class="waves-effect waves-light btn-small black tooltipped" data-position="bottom" data-tooltip="edit">&#9998;</a>
+
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger tooltipped" data-position="bottom" data-tooltip="delete"
+            href="#modal1">&#9940;</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <p class="red-text darken-3">Are you sure you want to delete this job?</p>
+            </div>
+            <div class="modal-footer">
+              <a href="{{ url_for('delete_jobs', jobs_id=jobs._id) }}"
+                class="waves-effect waves-light btn-small blue lighten-1">Yes, delete</a>
+              <a href="{{ url_for('profile', username=session['user']) }}"
+                class="waves-effect waves-light btn-small green lighten-1">No, Cancel</a>
+            </div>
+          </div>
+          <!--Edit button-->
+          <a href="{{ url_for('edit_jobs', jobs_id=jobs._id) }}"
+            class="waves-effect waves-light btn modal-trigger tooltipped" data-position="bottom"
+            data-tooltip="edit">&#9998;</a>
           {% endif %}
-          
-         </div>
-         <div class="collapsible-body"><span>
-           <!--Job description-->
+
+        </div>
+        <div class="collapsible-body"><span>
+            <!--Job description-->
             <p>{{ jobs.job_description }}</p>
           </span>
-          
+
           <div>
             <!--Experience-->
             <h6><strong>Experience:</strong></h6>
@@ -68,33 +86,33 @@
           </div>
 
           <div>
-             <!--Qualification-->
+            <!--Qualification-->
             <h6><strong>Qualification:</strong></h6>
             <p>{{ jobs.qualification }}</p>
           </div>
 
           <div>
-             <!--About the Company-->
+            <!--About the Company-->
             <h6><strong>About the Company:</strong></h6>
             <p>{{ jobs.about_the_company }}</p>
           </div>
 
           <div>
-             <!--Application-->
+            <!--Application-->
             <h6><strong>Application:</strong></h6>
             <p>{{ jobs.application }}</p>
           </div>
 
           <div>
-             <!--Last Subtmit Date-->
+            <!--Last Subtmit Date-->
             <h6><strong>Last Submit Date:</strong></h6>
             <p>{{ jobs.submit_date }}</p>
           </div>
 
         </div>
-        
+
       </li>
-       <!--Job posted by-->
+      <!--Job posted by-->
       <p class="center-align  blue-text darken-4"><em><strong>Posted by: {{ jobs.posted_by }}</strong></em></p>
 
     </ul>
@@ -104,6 +122,6 @@
   {% endfor %}
 </div>
 
- 
+
 
 {% endblock %}

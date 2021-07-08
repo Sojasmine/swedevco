@@ -1,20 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-
+<!--bacground image-->
 {% block styles %}
 <style>
-   body {
-     background-image: url('../static/images/img6.jpg');
-   }
-   
-   p span {
-       background-color: skyblue;
-   }
+    body {
+        background-image: url('../static/images/img6.jpg');
+    }
+
+    p span {
+        background-color: skyblue;
+    }
 </style>
 {% endblock%}
- 
+
 
 <!--heading and paragraph for contact form-->
 <h4 class="center-align black-text">Contact Us</h4>
@@ -22,7 +21,8 @@
 
 <!-- Contact form-->
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="https://formsubmit.co/211d3f5411b81100d92808941a108c3b" enctype="multipart/form-data">
+    <form class="col s12 m8 offset-m2" method="POST" action="https://formsubmit.co/211d3f5411b81100d92808941a108c3b"
+        enctype="multipart/form-data">
         <div class="card-panel">
             <!--message to the recipient-->
             <input type="hidden" name="_subject" value="New email!">
@@ -52,15 +52,15 @@
                 <div class="input-field col s12">
                     <i class="tiny fas fa-paperclip prefix"></i>
                     <input type="file" name="attachment" accept="image/png, image/jpeg">
-                    </div>
                 </div>
+            </div>
             <!--send button-->
             <div class="row">
-            <button class="btn waves-effect waves-light col s12" type="submit">
-                <i class="tiny fas fa-sign-in-alt"></i>Send</button>
+                <button class="btn waves-effect waves-light col s12" type="submit">
+                    <i class="tiny fas fa-sign-in-alt"></i>Send</button>
             </div>
         </div>
-</form>
+    </form>
 </div>
 
 

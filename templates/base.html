@@ -26,63 +26,83 @@
         <!--top navbar-->
         <nav class="nav-extended">
             <div class="nav-wrapper">
+                <!--Home and Title-->
                 <a href="{{ url_for('index') }}" class="brand-logo"><b>Sw<span>ed</span><span>ev</span>Co.</b></a></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('index') }}"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a>
                     </li>
-                    
+                <!--All Jobs-->
                     <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-tasks " aria-hidden="true"></i> All
                             Jobs</a></li>
-                {% if session.user %}
+                    {% if session.user %}
+                <!--Profile-->
                     <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
                                 aria-hidden="true"></i> Profile</a></li>
+                <!--Post Jobs-->
                     <li><a href="{{ url_for('post_jobs') }}"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post
                             Jobs</a></li>
-                {% if session.user|lower == "admin"|lower %}
-                    <li><a href="{{ url_for('get_categories') }}"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
-                {% endif %}
+                    {% if session.user|lower == "admin"|lower %}
+                <!--Categories-->
+                    <li><a href="{{ url_for('get_categories') }}"> <i class="tiny fa fa-list-alt"
+                                aria-hidden="true"></i>Categories</a></li>
+                    {% endif %}
+                <!--Sign Out-->
                     <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i>
-                            Signout</a></li>
+                            Sign out</a></li>
 
-                {% else %}
+                    {% else %}
+                <!--Sign In-->
                     <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i>
-                            Signin</a></li>
+                            Sign In</a></li>
+                <!--Register-->
                     <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt"
                                 aria-hidden="true"></i>Register </a></li>
+                <!--Contact-->
                     <li><a href="{{ url_for('contact') }}"><i class="tiny fa fa-envelope"
                                 aria-hidden="true"></i>Contact</a></li>
-                {% endif%}
+                    {% endif%}
                 </ul>
             </div>
         </nav>
         <!--mobile side navbar-->
         <ul class="sidenav" id="mobile-demo">
+        <!--Title-->
             <li>
                 <h4 class="center-align"></h4>SwedevCo
             </li>
+        <!--Home-->
             <li><a href="{{ url_for('index') }}"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
+        <!--All Jobs-->
             <li><a href="{{ url_for('get_jobs') }}"><i class="tiny fa fa-tasks " aria-hidden="true"></i> All Jobs</a>
             </li>
-        {% if session.user %}
+            {% if session.user %}
+        <!--Profile-->
             <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="tiny fa fa-user-circle"
                         aria-hidden="true"></i> Profile</a></li>
+        <!--Post Jobs-->
             <li><a href="{{ url_for('post_jobs') }}"><i class="tiny fa fa-upload" aria-hidden="true"></i> Post Jobs</a>
             </li>
-        {% if session.user|lower == "admin"|lower %}
-            <li><a href="{{ url_for('get_categories') }}"> <i class="tiny fa fa-list-alt" aria-hidden="true"></i>Categories</a></li>
-        {% endif %}
+            {% if session.user|lower == "admin"|lower %}
+        <!--Categories-->
+            <li><a href="{{ url_for('get_categories') }}"> <i class="tiny fa fa-list-alt"
+                        aria-hidden="true"></i>Categories</a></li>
+            {% endif %}
+        <!--Sign Out-->
             <li><a href="{{ url_for('signout') }}"><i class="tiny fa fa-sign-in-alt" aria-hidden="true"></i> Signout</a>
             </li>
-
-        {% else %}
-            <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Signin</a>
+        
+            {% else %}
+        <!--Sign In-->
+            <li><a href="{{ url_for('signin') }}"><i class="tiny fa fa-sign-out-alt" aria-hidden="true"></i> Sign In</a>
             </li>
+        <!--Register-->
             <li><a href="{{ url_for('register') }}"><i class="tiny fa fa-file-alt" aria-hidden="true"></i>Register </a>
             </li>
+        <!--Contact-->
             <li><a href="{{ url_for('contact') }}"><i class="tiny fa fa-envelope" aria-hidden="true"></i>Contact</a>
             </li>
-        {% endif %}
+            {% endif %}
         </ul>
 
     </head>
@@ -109,35 +129,36 @@
     <!--footer-->
     <footer class="page-footer">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Social links</h5>
-              <div class="container">
-              <a href="https://www.facebook.com/">
-                <i class="small fab fa-facebook-square"></i>
-                </a>
-                <a href="https://www.linkedin.com/">
-                    <i class="small fab fa-linkedin"></i>
-                </a>
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Social links</h5>
+                    <div class="container">
+                        <a href="https://www.facebook.com/">
+                            <i class="small fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <i class="small fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">SwedevCo.</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="{{ url_for('register') }}">Register</a></li><br>
+                        <li><a class="grey-text text-lighten-3" href="{{ url_for('signin') }}"> Sign in</a></li>
+                    </ul>
+                </div>
             </div>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">SwedevCo.</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="{{ url_for('register') }}">Register</a></li><br>
-                <li><a class="grey-text text-lighten-3" href="{{ url_for('signin') }}"> Sign in</a></li>
-             </ul>
-            </div>
-          </div>
         </div>
         <div class="footer-copyright">
-          <div class="container">
-          © 2021 Sojasmine Gjerstad
-          <a class="grey-text text-lighten-4 right" href="{{ url_for('contact') }}"><i class="tiny fa fa-envelope" aria-hidden="true"></i>  Contact</a>
-          </div>
+            <div class="container">
+                © 2021 Sojasmine Gjerstad
+                <a class="grey-text text-lighten-4 right" href="{{ url_for('contact') }}"><i class="tiny fa fa-envelope"
+                        aria-hidden="true"></i> Contact</a>
+            </div>
         </div>
-      </footer>
-<!--script-->
+    </footer>
+    <!--script-->
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
