@@ -101,33 +101,33 @@ It was designed for users to repost jobs that others may find interesting from o
 
    * Colour scheme
 
-      Logo title: #fff; rgb(223, 14, 14); rgb(252, 41, 51); #0c0c0c; #333;
+      Logo title: #fff;   rgb(223, 14, 14);   rgb(252, 41, 51);   #0c0c0c;   #333;
 
       ![#fff](static/Colors/1.JPG)  ![rgb(223, 14, 14)](static/Colors/2.JPG)  ![rgb(252, 41, 51)](static/Colors/3.JPG)  ![#0c0c0c](static/Colors/4.JPG)  ![#333](static/Colors/5.JPG)
 
-      Navbar and footer background color: black;
+      * Navbar and footer background color: black;
 
       ![Black](static/Colors/5.JPG)
 
-      Tiny and small icons: skyblue;
+      * Tiny and small icons: skyblue;
 
       ![Skyblue](static/Colors/6.JPG)
 
-      Icons for the landing page:  pink lighten-2
+      * Icons for the landing page:  pink lighten-2
 
       ![Pink lighten-2](static/Colors/7.JPG)
 
-      Button: black;
+      * Button: black;
 
-      Modal delete button: blue lighten-1
+      * Modal delete button: blue lighten-1
 
       ![Pink lighten-2](static/Colors/8.JPG)
 
-      Modal cancel button: green lighten-1
+      * Modal cancel button: green lighten-1
 
       ![Green lighten-2](static/Colors/9.JPG)
 
-      Border for the flash messages: #f51fb8;
+      * Border for the flash messages: #f51fb8;
 
       ![#f51fb8](static/Colors/10.JPG)
 
@@ -159,13 +159,13 @@ It was designed for users to repost jobs that others may find interesting from o
 
    * Defensive design
 
-        * No registrered user can not post, share, delete or edit job advertiseemnt.
-        * More than 5 characters required for username and password by creating an account. 
-        * When deleting posts, a modal appears to confirm if you a user really want to remove or delete post.
-        * Category must given. 
+        * Not registered users can not post, share, delete or edit job advertisements.
+        * More than 5 characters required for username and password by creating an account.
+        * When deleting posts, a modal appears to confirm if you a user want to remove or delete a post.
+        * Category must be given.
 
 
-[Back to Table of contents](Table-of-Contents)
+[Back to Table of contents](#Table-of-Contents)
 
    ### Wireframes
 
@@ -188,19 +188,77 @@ It was designed for users to repost jobs that others may find interesting from o
      
    * Data schema
    1. [MongoDB](https://www.mongodb.com/) is the database service used for this project. 
-   1. The project has 3 collections in the database. All fields are string data type. [Dbdiagram](https://dbdiagram.io/) was used to make structure for database.
+   1. The project has 3 collections in the database: Categories, Users and Jobs. All fields are string data types.
+     [Dbdiagram](https://dbdiagram.io/) used to make a structure for the database.
     ![Data Schema](static/data-schema/db-schema.png)
 
 
-    
-
-
+---
 
 
 ## Features
+   
+   ### Potential features
 
-Internet job boards continue to be on the top places to search for job openings.The website lists only technical positions. There is a focus here on all types of technical openings-regular, full time, part time and contract. 
-This is a great source for tech job postings. 
+   #### Structure
+
+   * Responsive and user-friendly interface.
+   * Easy navigation menu bar.
+   * Simple design.
+   * User can create an account.
+   * User can sign In.
+   * User can edit and delete job advertisements.
+   * Logo, menu bar and footer applied on all pages.
+    
+   #### Surface
+    
+   * I choose a simple colour palette to style the website with light wall background images. 
+   * [Materialize](https://materializecss.com/) used to make the website responsively and user friendly. 
+   
+   1. Landing page
+   *  Users can read some information about the webpage. A button with a link in the middle of the page leads to the registration page. 
+
+   1. All Jobs
+   * Users can search jobs in the search engine and read all the technical jobs posted by users.
+   * Registered users with an account can delete or edit their job list on the page.
+
+   1. Sign In
+   * A simple form where users can sign in with a username and password.
+   * New users can also create a new account directly from the sign-in page.
+
+   1. Register
+   * A simple registration form that users can create an account with users username, password, first name and last name.
+   * Users who already have an account can sign in directly from the registration page.
+
+   1. Contact
+   * Users with or without contact can use the contact form. 
+   * User can also send files or documents from the form.
+   * A verification message will show up to verify if the user is a human. Users can return to the original website by clicking the website link after sending an email.
+
+   1. Profile
+   * Users can see their username on the top of the page.
+   * All job advertisements posted by the user appear under the profile name. 
+   * Users can delete or edit the job advertisements. 
+
+   1. Categories
+   * Only the admin can manage categories.
+   * Admin can add, delete and remove categories.
+
+   1. Flash messages
+   * Messages displayed on the top of the page to confirm after users have been: 
+          
+          * registered a new account
+          * sign in and sign out
+          * delete and edit a job advertisement
+          * add, delete and edit category(only for admin)
+
+  ### Advanced feature
+
+  1. Add pagination.
+  1. Email verification.
+  1. Sign up to newsletters.
+  1. User can save a job adverstisement.
+  1. Add cookies to identify when a new user visits the website.
 
 
 1. Strategy
@@ -215,15 +273,9 @@ The aim of the project was to create a simple community jobs board that included
   * Search among the list.
 
 
-2. Scope
 
 
-#### Design
-#### Typography
-#### Imagery
-#### Colour
-#### Wireframes
-#### Data Schema
+
 
 Large hero image with someone pointing to their phone to clearly show what the page is for
 
