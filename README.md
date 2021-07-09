@@ -60,7 +60,7 @@ It was designed for users to repost jobs that others may find interesting from o
 
 ---
 
-## User Experience (UX)
+## User Experience
 
    The ideal users are everybody that want to share or repost job advertisement to job seeker who wants to work in Sweden.
 
@@ -102,40 +102,71 @@ It was designed for users to repost jobs that others may find interesting from o
    ### Design
 
    * Colour scheme
-         * Logo title: #fff; rgb(223, 14, 14); rgb(252, 41, 51); #0c0c0c; #333;
-         ![#fff](static/Colors/1.JPG) ![rgb(223, 14, 14)](static/Colors/2.JPG) ![rgb(252, 41, 51)](static/Colors/3.JPG) !#0c0c0c](static/Colors/4.JPG) ![#333](static/Colors/5.JPG)
 
-         * Navbar and footer background color: black;
-         ![Black](static/Colors/5.JPG)
+         *  Logo title: #fff; rgb(223, 14, 14); rgb(252, 41, 51); #0c0c0c; #333;
+
+           ![#fff](static/Colors/1.JPG)  ![rgb(223, 14, 14)](static/Colors/2.JPG)  ![rgb(252, 41, 51)](static/Colors/3.JPG)  ![#0c0c0c](static/Colors/4.JPG)  ![#333](static/Colors/5.JPG)
+
+         *  Navbar and footer background color: black;
+
+            ![Black](static/Colors/5.JPG)
 
          * Tiny and small icons: skyblue;
-         ![Skyblue](static/Colors/6.JPG)
+
+           ![Skyblue](static/Colors/6.JPG)
 
          * Icons for the landing page:  pink lighten-2
-         ![Pink lighten-2](static/Colors/7.JPG)
+
+           ![Pink lighten-2](static/Colors/7.JPG)
 
          * Button: black;
+
          * Modal delete button: blue lighten-1
-         ![Pink lighten-2](static/Colors/8.JPG)
+
+           ![Pink lighten-2](static/Colors/8.JPG)
 
          * Modal cancel button: green lighten-1
-         ![Green lighten-2](static/Colors/9.JPG)
+
+           ![Green lighten-2](static/Colors/9.JPG)
 
          * Border for the flash messages: #f51fb8;
-         ![#f51fb8](static/Colors/10.JPG)
-         
-   * Typography
-   * Icons
-   * Images
-        * [Compressor](https://compressor.io/) used to images
 
-        * 
+           ![#f51fb8](static/Colors/10.JPG)
+
+   * Typography
+
+      * Akronim used to style The logo name. 
+      
+   * Icons
+
+      * In this project, icons are provided by [Fontawesome](https://fontawesome.com/).
+
+   * Images
+
+      * [Compressor](https://compressor.io/) used to reduce the size of the images without loosing the original quality.
+
+      * Background Images: 
+
+        * index.html: [Pixabay](https://pixabay.com/sv/illustrations/textur-tr%c3%a4-s%c3%a4d-struktur-tr%c3%a4-textur-1027678/)
+        * jobs.html:[Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/gipsstrukturen-texturerat-gips-vit-v%C3%A4gg-konsistens-vit-sten-bakgrund-v%C3%A4gg-83626)
+        * add_category.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/gr%C3%A5-tegel-bakgrund-makro-gr%C3%A5-tegel-gr%C3%A5-brickwall-tegel-texturer-139522)
+        * contact.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/4k-vit-brickwall-close-up-vitt-tegel-tegel-texturer-123049)
+        * edit_category.html: [Pixabay](https://pixabay.com/sv/photos/vit-m%c3%a5lad-betongv%c3%a4gg-betong-white-888895/)
+        * edit_jobs.html: [Pixabay](https://pixabay.com/sv/photos/v%c3%a4gg-white-abstrakt-tegel-bakgrund-175684/)
+        * post_jobs.html:[Pixabay](https://pixabay.com/sv/photos/white-v%c3%a4gg-texturer-arkitektur-4298476/)
+        * profile.html:[Pixabay](https://pixabay.com/sv/photos/v%c3%a4gg-tegel-baird-2423815/)
+        * register.html:[Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/v%C3%A4gg-konsistens-vit-gipsstrukturen-vit-v%C3%A4gg-sten-struktur-81890)
+        * signing.html:[Pixabay](https://pixabay.com/sv/illustrations/textur-tr%c3%a4-s%c3%a4d-struktur-tr%c3%a4-textur-1027796/)
+       
+
+         
+   
    
    * Defensive design
         * 
 [Back to Table of contents](Table-of-Contents)
 
-I did some research about how other site looks like that give me some inspiration and idea to my website. 
+ 
 ---
 ## Features
 
