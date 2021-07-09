@@ -14,7 +14,7 @@ This web application was made by Flask and MongoDB, the frontend was designed us
 ___
 
 
-[Table of Contents](#table-of-contents) 
+# Table of Contents
 
 [Description](#description)
 
@@ -60,20 +60,20 @@ It was designed for users to repost jobs that others may find interesting from o
 
 ---
 
-[User Experience (UX)](#user-experience-(ux))
+## User Experience (UX)
 
    The ideal users are everybody that want to share or repost job advertisement to job seeker who wants to work in Sweden.
 
-   * [Project goals](#project-goals) :
+   ### Project goals :
        
-       *  Making a website that uses HTML, CSS, Javascript, Python, Flask and MongoDB.
-       *  Making a website that is easy to navigate and simple.
-       *  Making a website that provides users and site owners to post or share a job advertisement.
-       *  Making a fully responsive site that is compatible with all devices.
-       *  Allow users and site owners to Create, Read, Update and Delete job advertisements.
+   * Making a website that uses HTML, CSS, Javascript, Python, Flask and MongoDB.
+   * Making a website that is easy to navigate and simple.
+   * Making a website that provides users and site owners to post or share a job advertisement.
+   * Making a fully responsive site that is compatible with all devices.
+   * Allow users and site owners to Create, Read, Update and Delete job advertisements.
 
 
-   * [User Stories](#user-stories)
+   ### User Stories
 
       - User with account: 
          * Navigate easily on the site.
@@ -99,14 +99,14 @@ It was designed for users to repost jobs that others may find interesting from o
         * Make sure that the user cannot log in to my profile or have access to the database.
         * Logout from my admin account after visiting the site.  
 
-   * [Design](#design)
-   
+   ### Design
+
      
 [Back to Table of contents](#table-of-contents)
 
 I did some research about how other site looks like that give me some inspiration and idea to my website. 
 ---
-[Features](#features)
+## Features
 
 Internet job boards continue to be on the top places to search for job openings.The website lists only technical positions. There is a focus here on all types of technical openings-regular, full time, part time and contract. 
 This is a great source for tech job postings. 
