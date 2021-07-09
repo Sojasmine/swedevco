@@ -25,6 +25,8 @@ ___
    * [User Stories](#User-Stories)
 
    * [Design](#Design)
+   
+   * [Strategy](#Design)
 
    * [Wireframes](#Wireframes)
 
@@ -64,11 +66,11 @@ It was designed for users to repost jobs that others may find interesting from o
 
    ### Project goals
        
-   * Making a website that uses HTML, CSS, Javascript, Python, Flask and MongoDB.
-   * Making a website that is easy to navigate and simple.
-   * Making a website that provides users and site owners to post or share a job advertisement.
-   * Making a fully responsive site that is compatible with all devices.
-   * Allow users and site owners to Create, Read, Update and Delete job advertisements.
+   * Create a website that uses HTML, CSS, Javascript, Python, Flask and MongoDB.
+   * Create a website that is easy to navigate and simple.
+   * Create a website that provides users and site owners to post or share a job advertisement.
+   * Create a fully responsive site that is compatible with all devices.
+   * Create users and site owners to Create, Read, Update and Delete job advertisements.
 
 
    ### User Stories
@@ -89,13 +91,15 @@ It was designed for users to repost jobs that others may find interesting from o
         * Contact site owner or support.
 
    * User as admin:
-        * Navigate easily on the site.
-        * Post and share job advertisements from any device.
+        * Navigate easily on the site
+        * Post and share job advertisements from any devices.
         * Manage Category.
         * Have access to delete and remove users job advertisements if needed.
         * Manage the job advertisement that I posted..
         * Make sure that the user cannot log in to my profile or have access to the database.
-        * Logout from my admin account after visiting the site.  
+        * Logout from my admin account after visiting the site.
+
+          
 
    ### Design
 
@@ -164,8 +168,9 @@ It was designed for users to repost jobs that others may find interesting from o
         * When deleting posts, a modal appears to confirm if you a user want to remove or delete a post.
         * Category must be given.
 
+   ### Strategy
 
-[Back to Table of contents](#Table-of-Contents)
+   The aim of the project was to create a simple community jobs board that included full CRUD functionality using Python, Flask, MongoDB, JavaScript, CSS, Materialize and HTML that could be built upon in the future to include more features
 
    ### Wireframes
 
@@ -186,7 +191,7 @@ It was designed for users to repost jobs that others may find interesting from o
    ![flask](static/data-schema/Flask_structure.png)
 
      
-   * Data schema
+   * Database
    1. [MongoDB](https://www.mongodb.com/) is the database service used for this project. 
    1. The project has 3 collections in the database: Categories, Users and Jobs. All fields are string data types.
      [Dbdiagram](https://dbdiagram.io/) used to make a structure for the database.
@@ -194,7 +199,7 @@ It was designed for users to repost jobs that others may find interesting from o
 
 
 ---
-
+[Back to Table of contents](#Table-of-Contents)
 
 ## Features
    
@@ -208,49 +213,50 @@ It was designed for users to repost jobs that others may find interesting from o
    * User can create an account.
    * User can sign In.
    * User can edit and delete job advertisements.
-   * Logo, menu bar and footer applied on all pages.
+   * Menu bar at the top of the page applied on all pages.
+   * Footer has been designed at the bottom of the page. 
     
    #### Surface
     
    * I choose a simple colour palette to style the website with light wall background images. 
    * [Materialize](https://materializecss.com/) used to make the website responsively and user friendly. 
    
-   1. Landing page
+   1. **Landing page**
    *  Users can read some information about the webpage. A button with a link in the middle of the page leads to the registration page. 
 
-   1. All Jobs
+   2. **All Jobs**
    * Users can search jobs in the search engine and read all the technical jobs posted by users.
    * Registered users with an account can delete or edit their job list on the page.
 
-   1. Sign In
+   3. **Sign In**
    * A simple form where users can sign in with a username and password.
    * New users can also create a new account directly from the sign-in page.
 
-   1. Register
+   4. **Register**
    * A simple registration form that users can create an account with users username, password, first name and last name.
    * Users who already have an account can sign in directly from the registration page.
 
-   1. Contact
+   5. **Contact**
    * Users with or without contact can use the contact form. 
    * User can also send files or documents from the form.
    * A verification message will show up to verify if the user is a human. Users can return to the original website by clicking the website link after sending an email.
 
-   1. Profile
+   6. **Profile**
    * Users can see their username on the top of the page.
    * All job advertisements posted by the user appear under the profile name. 
    * Users can delete or edit the job advertisements. 
 
-   1. Categories
+   7. **Categories**
    * Only the admin can manage categories.
    * Admin can add, delete and remove categories.
 
-   1. Flash messages
+   8. **Flash messages**
    * Messages displayed on the top of the page to confirm after users have been: 
           
-          * registered a new account
-          * sign in and sign out
-          * delete and edit a job advertisement
-          * add, delete and edit category(only for admin)
+      * registered a new account
+      * sign in and sign out
+      * delete and edit a job advertisement
+      * add, delete and edit category(only for admin)
 
   ### Advanced feature
 
@@ -259,51 +265,51 @@ It was designed for users to repost jobs that others may find interesting from o
   1. Sign up to newsletters.
   1. User can save a job adverstisement.
   1. Add cookies to identify when a new user visits the website.
+  
+---
+[Back to Table of contents](#Table-of-Contents)
 
 
-1. Strategy
-The aim of the project was to create a simple community jobs board that included full CRUD functionality using Python, Flask, MongoDB, JavaScript, CSS, Materialize and HTML that could be built upon in the future to include more features.
+## Technologies Used
+   
+   ### Language Used
 
-* User Goals:
-  * Create an account and sign in.
-  * Share Tech job.
-  * View others posts.
-  * Make change .
-  * Remove posts.
-  * Search among the list.
+   * HTML5 : for structure and the content for my project.
+   * CSS : provides the style of the HTML5 elements.
+   * Javascript : The language that makes the webpage alive.
+   * Jquery : used as the JavaScript functionality.
+   * Python : provides the backend of the project.
+
+   ### Program Used
+
+   * [Github](https://github.com/) for the version control.
+   * [Gitpod](https://gitpod.io/) is used to develop the project.
+   * [Git](https://git-scm.com/) used for version control to commit to Git and push to GitHub.
+   * [Heroku](https://www.heroku.com/) is the cloud platform to deploying the app.
+   * [MongoDb](https://www.mongodb.com/) to store data.
+   * [Flask](https://flask.palletsprojects.com/) is the web framework for the app to access MongoDB.
+   * [Jinja](https://jinja.palletsprojects.com/) Jinja is used for Python template.
+   * [Werkzeug](https://werkzeug.palletsprojects.com/) to generate password-hash and check-hash.
+   * [Randomkeygen](https://randomkeygen.com/) used to generate strong password and secure the appplication.
+   * [Jquery](http://code.jquery.com) for css library.
+   * [Materialize](https://materializecss.com/) used to make the site responsiveness. 
+   * [Balsamiq](https://balsamiq.com/) for mockup.
+   * [Am I responsive](http://ami.responsivedesign.is/) to test responsiveness. 
+   
+
+## Testing
+ 
+  Document for testing can be found ![here](Testing.md)
+
+## Deployement
+## Bugs
+## Credits
+## Acknowledgements
 
 
 
 
 
 
-Large hero image with someone pointing to their phone to clearly show what the page is for
 
-Text which welcomes the user to their profile page and displays their username
-
-Any jobs that they have posted will be shown here with the most recent being first
-
-A user is able to see the full job they have posted by clicking the more information button - to improve UX and consistency, the job is viewed in the same way as other pages
-
-Edit and delete buttons now show up for users of jobs they have posted
-
-Delete modal pops up if a user wants to delete a job, asking for confirmation that they do actually wish to delete the job
-
-Confirmation message appears on the screen to provide the user with feedback on any action they have taken
-
-##### Edit Job Page
-
-Once the edit button is clicked the user is taken back to the same form for when they posted the job and they are able to update any details they need to
-
-Confirmation message appears on the screen to provide the user with feedback on any action they have taken
-
-#### Sign In Page
-
-Allows the user to sign in to their account
-
-Link to registration page if the user does not already have an account
-
-Confirmation message appears on the screen to provide the user with feedback on any action they have taken
-
-#### Register Page
 
