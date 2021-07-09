@@ -1,41 +1,68 @@
-# SwedevCo
+# SwedevCo.
 
-## Milestone 3, Data Centric development
+## Milestone 3, Python and Data Centric development
 
 [Lie website here](https://swedevco.herokuapp.com/)
 add a screen here
 
-### About
+### About the project
 
-SwedevCo is a website dedicated to all employers, companies, even private people who want to post or looking for a job in the tech sector on the site. The website allows users to create an account and be able to post, edit and delete posts according to (Create,Read, Update, Delete). The website is created in a responsive design that is very handy to search or post a job from mobile devices to tablets or larger screens.
+SwedevCo is a website dedicated to all employers, companies, even private people who want to post or looking for a job in the tech sector on the site. The website allows users to create an account and be able to share, edit and delete posts according to (Create,Read, Update, Delete). The website is created in a responsive design that is very handy to search or post a job from mobile devices to tablets or larger screens.
 This website is made to prepare my Milestone Data-centric project with Code Institute.
 This web application was made by Flask and MongoDB, the frontend was designed using materialize.
-__
-
-
-[Table of Contents](Table_of_Contents)
-
-[Description](Description)
-[User Stories](User_Stories)
-[Market Research](Market_Research)
-[UX and Features]([UX_and_Features)
-[Future Improvements](Future_Improvements)
-[Changes](Changes)
-[Technologies Used](Technologies_Used)
-[Testing](Testing)
-[Deployment](Deployment)
-[Credits](Credits)
-[Acknowledgements](Acknowledgements)
-[Support](Support)
-[Description](Description)
 
 ___
+
+
+[Table of Contents](Table_of_Contents) :
+
+[Description](Description)
+
+[User Experience (UX)](User_Experience-(UX))
+
+   * [Project goals](Project_goals)
+
+   * [User Stories]([User_tories)
+
+   * [Design](Design)
+
+   * [Strategy](Strategy)
+
+   * [Wireframes](Wireframes)
+
+   * [Data Schema](Data_Schema)
+     
+[Features](Features)
+   * [Potential features](Potential_features)
+
+   * [Advanced feature](Advanced_feature)
+
+[Technologies Used](Technologies_Used)
+
+[Testing](Testing)
+
+[Deployment](Deployment)
+
+[Bugs](Bugs)
+
+[Credits](Credits)
+
+[Acknowledgements](Acknowledgements)
+
+---
+
+[Description](Description)
 
 SwedevCo offer a free service and post jobs from exciting and well-known companies in Sweden. 
 Our category systems makes it easy for everyone to find Jobs in their specialized field.
 It was designed for users to repost jobs that others may find interesting, rather than a place to apply for jobs directly.
 ---
-[User Stories](User_Stories)
+
+[User Experience (UX)](User_Experience-(UX))
+
+#### User Stories
+####
+
 "I want to be able to post intersting job for others to view"
 "I want to be able to to read others posted jobs"
 "I want to be able to edit any job I have posted for a change"
@@ -64,15 +91,12 @@ The aim of the project was to create a simple community jobs board that included
 2. Scope
 
 
-#### Current Features
-
-##### Home Page
-
-##### Jobs Page
-
-#### Post Job Page
-
-#### Profile Page
+#### Design
+#### Typography
+#### Imagery
+#### Colour
+#### Wireframes
+#### Data Schema
 
 Large hero image with someone pointing to their phone to clearly show what the page is for
 
@@ -88,7 +112,7 @@ Delete modal pops up if a user wants to delete a job, asking for confirmation th
 
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
 
-#### Edit Job Page
+##### Edit Job Page
 
 Once the edit button is clicked the user is taken back to the same form for when they posted the job and they are able to update any details they need to
 
@@ -103,3 +127,4 @@ Link to registration page if the user does not already have an account
 Confirmation message appears on the screen to provide the user with feedback on any action they have taken
 
 #### Register Page
+
