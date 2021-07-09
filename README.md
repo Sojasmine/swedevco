@@ -14,51 +14,51 @@ This web application was made by Flask and MongoDB, the frontend was designed us
 ___
 
 
-[Table of Contents](Table_of_Contents) :
+# [Table of Contents](#Table-of-Contents) :
 
-[Description](Description)
+[Description](#Description)
 
-[User Experience (UX)](User_Experience-(UX))
+[User Experience (UX)](#User-Experience-(UX))
 
-   * [Project goals](Project_goals)
+   * [Project goals](#Project-goals)
 
-   * [User Stories]([User_tories)
+   * [User Stories](#User-tories)
 
-   * [Design](Design)
+   * [Design](#Design)
 
-   * [Strategy](Strategy)
+   * [Strategy](#Strategy)
 
-   * [Wireframes](Wireframes)
+   * [Wireframes](#Wireframes)
 
-   * [Data Schema](Data_Schema)
+   * [Data Schema](#Data-Schema)
      
-[Features](Features)
-   * [Potential features](Potential_features)
+[Features](#Features)
+   * [Potential features](#Potential-features)
 
-   * [Advanced feature](Advanced_feature)
+   * [Advanced feature](#Advanced-feature)
 
-[Technologies Used](Technologies_Used)
+[Technologies Used](#Technologies-Used)
 
-[Testing](Testing)
+[Testing](#Testing)
 
-[Deployment](Deployment)
+[Deployment](#Deployment)
 
-[Bugs](Bugs)
+[Bugs](#Bugs)
 
-[Credits](Credits)
+[Credits](#Credits)
 
-[Acknowledgements](Acknowledgements)
+[Acknowledgements](#Acknowledgements)
 
 ---
 
-[Description](Description)
+[Description](#Description)
 
 SwedevCo offer a free service and post jobs from exciting and well-known companies in Sweden. 
 Our category systems makes it easy for everyone to find Jobs in their specialized field.
 It was designed for users to repost jobs that others may find interesting, rather than a place to apply for jobs directly.
 ---
 
-[User Experience (UX)](User_Experience-(UX))
+[User Experience (UX)](#User-Experience-(UX))
 
 #### User Stories
 ####
@@ -69,6 +69,8 @@ It was designed for users to repost jobs that others may find interesting, rathe
 "I want to be able to delete my posts tat is no longer relevant"
 "I want to be able to search for any jobs on the site.
 
+
+[Back to Table of contents](#table-of-contents)
 I did some research about how other site looks like that give me some inspiration and idea to my website. 
 ---
 [UX and Features](UX_and_Features)
