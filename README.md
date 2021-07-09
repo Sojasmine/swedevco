@@ -7,73 +7,107 @@ add a screen here
 
 ### About the project
 
-SwedevCo is a website dedicated to all employers, companies, even private people who want to post or looking for a job in the tech sector on the site. The website allows users to create an account and be able to share, edit and delete posts according to (Create,Read, Update, Delete). The website is created in a responsive design that is very handy to search or post a job from mobile devices to tablets or larger screens.
+SwedevCo is a website dedicated to all employers, companies, even private people who want to post a job advertisement or search for an attractive job in the tech sector on the site. The website allows users to create an account and be able to share, edit and delete posts according to (Create, Read, Update, Delete). The website is created in a responsive design that is very handy to search or post a job from mobile devices to tablets or larger screens.
 This website is made to prepare my Milestone Data-centric project with Code Institute.
 This web application was made by Flask and MongoDB, the frontend was designed using materialize.
 
 ___
 
 
-# [Table of Contents](#Table-of-Contents) :
+[Table of Contents](#table-of-contents) 
 
-[Description](#Description)
+[Description](#description)
 
-[User Experience (UX)](#User-Experience-(UX))
+[User Experience (UX)](#user-experience-(ux))
 
-   * [Project goals](#Project-goals)
+   * [Project goals](#project-goals)
 
-   * [User Stories](#User-tories)
+   * [User Stories](#user-stories)
 
-   * [Design](#Design)
+   * [Design](#design)
 
-   * [Strategy](#Strategy)
+   * [Strategy](#strategy)
 
-   * [Wireframes](#Wireframes)
+   * [Wireframes](#wireframes)
 
-   * [Data Schema](#Data-Schema)
+   * [Data Schema](#data-schema)
      
-[Features](#Features)
-   * [Potential features](#Potential-features)
+[Features](#features)
 
-   * [Advanced feature](#Advanced-feature)
+   * [Potential features](#potential-features)
 
-[Technologies Used](#Technologies-Used)
+   * [Advanced feature](#advanced-feature)
 
-[Testing](#Testing)
+[Technologies Used](#technologies-used)
 
-[Deployment](#Deployment)
+[Testing](#testing)
 
-[Bugs](#Bugs)
+[Deployment](#deployment)
 
-[Credits](#Credits)
+[Bugs](#bugs)
 
-[Acknowledgements](#Acknowledgements)
+[Credits](#credits)
+
+[Acknowledgements](#acknowledgements)
 
 ---
 
-[Description](#Description)
+[Description](#description)
 
-SwedevCo offer a free service and post jobs from exciting and well-known companies in Sweden. 
-Our category systems makes it easy for everyone to find Jobs in their specialized field.
-It was designed for users to repost jobs that others may find interesting, rather than a place to apply for jobs directly.
+Swedevco offers a free service to post and share job advertisements from exciting and well-known companies in Sweden.
+Our Category systems make it easy for everyone to find jobs in their specialized field.
+It was designed for users to repost jobs that others may find interesting from other sites, rather than a place to apply for jobs directly.
+
 ---
 
-[User Experience (UX)](#User-Experience-(UX))
+[User Experience (UX)](#user-experience-(ux))
 
-#### User Stories
-####
+   The ideal users are everybody that want to share or repost job advertisement to job seeker who wants to work in Sweden.
 
-"I want to be able to post intersting job for others to view"
-"I want to be able to to read others posted jobs"
-"I want to be able to edit any job I have posted for a change"
-"I want to be able to delete my posts tat is no longer relevant"
-"I want to be able to search for any jobs on the site.
+   * [Project goals](#project-goals) :
+       
+       *  Making a website that uses HTML, CSS, Javascript, Python, Flask and MongoDB.
+       *  Making a website that is easy to navigate and simple.
+       *  Making a website that provides users and site owners to post or share a job advertisement.
+       *  Making a fully responsive site that is compatible with all devices.
+       *  Allow users and site owners to Create, Read, Update and Delete job advertisements.
 
 
+   * [User Stories](#user-stories)
+
+      - User with account: 
+         * Navigate easily on the site.
+         * Create an account.
+         * Post job advertisements from any device.
+         * Search or read for jobs posted by other users.
+         * Contact the site owner or support.
+         * Manage the job advertisement that I posted.
+         * Logout from account for security reason. 
+
+
+      - User without account:
+        * Navigate easily on the site.
+        * Can search for jobs on the site without registration from any device.
+        * Contact site owner or support.
+
+      - User as admin:
+        * Navigate easily on the site.
+        * Post and share job advertisements from any device.
+        * Manage Category.
+        * Have access to delete and remove users job advertisements if needed.
+        * Manage the job advertisement that I posted..
+        * Make sure that the user cannot log in to my profile or have access to the database.
+        * Logout from my admin account after visiting the site.  
+
+   * [Design](#design)
+   
+     
 [Back to Table of contents](#table-of-contents)
+
 I did some research about how other site looks like that give me some inspiration and idea to my website. 
 ---
-[UX and Features](UX_and_Features)
+[Features](#features)
+
 Internet job boards continue to be on the top places to search for job openings.The website lists only technical positions. There is a focus here on all types of technical openings-regular, full time, part time and contract. 
 This is a great source for tech job postings. 
 
