@@ -101,35 +101,35 @@ It was designed for users to repost jobs that others may find interesting from o
 
    * Colour scheme
 
-         Logo title: #fff; rgb(223, 14, 14); rgb(252, 41, 51); #0c0c0c; #333;
+      Logo title: #fff; rgb(223, 14, 14); rgb(252, 41, 51); #0c0c0c; #333;
 
-         ![#fff](static/Colors/1.JPG)  ![rgb(223, 14, 14)](static/Colors/2.JPG)  ![rgb(252, 41, 51)](static/Colors/3.JPG)  ![#0c0c0c](static/Colors/4.JPG)  ![#333](static/Colors/5.JPG)
+      ![#fff](static/Colors/1.JPG)  ![rgb(223, 14, 14)](static/Colors/2.JPG)  ![rgb(252, 41, 51)](static/Colors/3.JPG)  ![#0c0c0c](static/Colors/4.JPG)  ![#333](static/Colors/5.JPG)
 
-         Navbar and footer background color: black;
+      Navbar and footer background color: black;
 
-         ![Black](static/Colors/5.JPG)
+      ![Black](static/Colors/5.JPG)
 
-         Tiny and small icons: skyblue;
+      Tiny and small icons: skyblue;
 
-         ![Skyblue](static/Colors/6.JPG)
+      ![Skyblue](static/Colors/6.JPG)
 
-         Icons for the landing page:  pink lighten-2
+      Icons for the landing page:  pink lighten-2
 
-         ![Pink lighten-2](static/Colors/7.JPG)
+      ![Pink lighten-2](static/Colors/7.JPG)
 
-         Button: black;
+      Button: black;
 
-         Modal delete button: blue lighten-1
+      Modal delete button: blue lighten-1
 
-         ![Pink lighten-2](static/Colors/8.JPG)
+      ![Pink lighten-2](static/Colors/8.JPG)
 
-         Modal cancel button: green lighten-1
+      Modal cancel button: green lighten-1
 
-         ![Green lighten-2](static/Colors/9.JPG)
+      ![Green lighten-2](static/Colors/9.JPG)
 
-         Border for the flash messages: #f51fb8;
+      Border for the flash messages: #f51fb8;
 
-         ![#f51fb8](static/Colors/10.JPG)
+      ![#f51fb8](static/Colors/10.JPG)
 
    * Typography
 
@@ -170,8 +170,8 @@ It was designed for users to repost jobs that others may find interesting from o
    ### Wireframes
 
    * [Landing page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:1a0a4575-1e11-4db5-93ed-e3982e30a3b7)
-   * [All Jobs](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:9abe740f-1503-400b-abd8-02fe93ec4c78)
-   * [Sign In](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d1671473-ddeb-45e7-940c-84b711a6a5d5)
+   * [All Jobs]()
+   * [Sign In](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:9abe740f-1503-400b-abd8-02fe93ec4c78)
    * [Registration page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d1671473-ddeb-45e7-940c-84b711a6a5d5)
    * [Contact page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:b406f85f-acc7-4cd7-a242-871a55f2f7e0)
    * [Profile page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:2ff8016c-3798-40c7-b5a8-021059c86630)
@@ -182,14 +182,16 @@ It was designed for users to repost jobs that others may find interesting from o
 
    ### Data schema
 
-   * I used excalidraw to make a  [Flask](https://excalidraw.com/?ck_subscriber_id=1301493102#json=6375362518843392,Z5nHxrQ7vTDL6fvPMC646A) application structure.
+   * I used [excalidraw](https://excalidraw.com/) to make a Flask application structure.
+   ![flask](static/data-schema/Flask_structure.png)
+
      
    * Data schema
    1. [MongoDB](https://www.mongodb.com/) is the database service used for this project. 
-   1. The project has 3 collections in the database. All fields are string data type. I used [dbdiagram](https://dbdiagram.io/) to make structure for database.
+   1. The project has 3 collections in the database. All fields are string data type. [Dbdiagram](https://dbdiagram.io/) was used to make structure for database.
     ![Data Schema](static/data-schema/db-schema.png)
 
-    
+
     
 
 
