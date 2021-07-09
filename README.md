@@ -26,8 +26,6 @@ ___
 
    * [Design](#Design)
 
-   * [Strategy](#Strategy)
-
    * [Wireframes](#Wireframes)
 
    * [Data Schema](#Data-Schema)
@@ -103,35 +101,35 @@ It was designed for users to repost jobs that others may find interesting from o
 
    * Colour scheme
 
-         *  Logo title: #fff; rgb(223, 14, 14); rgb(252, 41, 51); #0c0c0c; #333;
+         Logo title: #fff; rgb(223, 14, 14); rgb(252, 41, 51); #0c0c0c; #333;
 
-           ![#fff](static/Colors/1.JPG)  ![rgb(223, 14, 14)](static/Colors/2.JPG)  ![rgb(252, 41, 51)](static/Colors/3.JPG)  ![#0c0c0c](static/Colors/4.JPG)  ![#333](static/Colors/5.JPG)
+         ![#fff](static/Colors/1.JPG)  ![rgb(223, 14, 14)](static/Colors/2.JPG)  ![rgb(252, 41, 51)](static/Colors/3.JPG)  ![#0c0c0c](static/Colors/4.JPG)  ![#333](static/Colors/5.JPG)
 
-         *  Navbar and footer background color: black;
+         Navbar and footer background color: black;
 
-            ![Black](static/Colors/5.JPG)
+         ![Black](static/Colors/5.JPG)
 
-         * Tiny and small icons: skyblue;
+         Tiny and small icons: skyblue;
 
-           ![Skyblue](static/Colors/6.JPG)
+         ![Skyblue](static/Colors/6.JPG)
 
-         * Icons for the landing page:  pink lighten-2
+         Icons for the landing page:  pink lighten-2
 
-           ![Pink lighten-2](static/Colors/7.JPG)
+         ![Pink lighten-2](static/Colors/7.JPG)
 
-         * Button: black;
+         Button: black;
 
-         * Modal delete button: blue lighten-1
+         Modal delete button: blue lighten-1
 
-           ![Pink lighten-2](static/Colors/8.JPG)
+         ![Pink lighten-2](static/Colors/8.JPG)
 
-         * Modal cancel button: green lighten-1
+         Modal cancel button: green lighten-1
 
-           ![Green lighten-2](static/Colors/9.JPG)
+         ![Green lighten-2](static/Colors/9.JPG)
 
-         * Border for the flash messages: #f51fb8;
+         Border for the flash messages: #f51fb8;
 
-           ![#f51fb8](static/Colors/10.JPG)
+         ![#f51fb8](static/Colors/10.JPG)
 
    * Typography
 
@@ -148,26 +146,55 @@ It was designed for users to repost jobs that others may find interesting from o
       * Background Images: 
 
         * index.html: [Pixabay](https://pixabay.com/sv/illustrations/textur-tr%c3%a4-s%c3%a4d-struktur-tr%c3%a4-textur-1027678/)
-        * jobs.html:[Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/gipsstrukturen-texturerat-gips-vit-v%C3%A4gg-konsistens-vit-sten-bakgrund-v%C3%A4gg-83626)
+        * jobs.html:  [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/gipsstrukturen-texturerat-gips-vit-v%C3%A4gg-konsistens-vit-sten-bakgrund-v%C3%A4gg-83626)
         * add_category.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/gr%C3%A5-tegel-bakgrund-makro-gr%C3%A5-tegel-gr%C3%A5-brickwall-tegel-texturer-139522)
         * contact.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/4k-vit-brickwall-close-up-vitt-tegel-tegel-texturer-123049)
         * edit_category.html: [Pixabay](https://pixabay.com/sv/photos/vit-m%c3%a5lad-betongv%c3%a4gg-betong-white-888895/)
         * edit_jobs.html: [Pixabay](https://pixabay.com/sv/photos/v%c3%a4gg-white-abstrakt-tegel-bakgrund-175684/)
-        * post_jobs.html:[Pixabay](https://pixabay.com/sv/photos/white-v%c3%a4gg-texturer-arkitektur-4298476/)
-        * profile.html:[Pixabay](https://pixabay.com/sv/photos/v%c3%a4gg-tegel-baird-2423815/)
-        * register.html:[Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/v%C3%A4gg-konsistens-vit-gipsstrukturen-vit-v%C3%A4gg-sten-struktur-81890)
-        * signing.html:[Pixabay](https://pixabay.com/sv/illustrations/textur-tr%c3%a4-s%c3%a4d-struktur-tr%c3%a4-textur-1027796/)
+        * post_jobs.html: [Pixabay](https://pixabay.com/sv/photos/white-v%c3%a4gg-texturer-arkitektur-4298476/)
+        * profile.html: [Pixabay](https://pixabay.com/sv/photos/v%c3%a4gg-tegel-baird-2423815/)
+        * register.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/v%C3%A4gg-konsistens-vit-gipsstrukturen-vit-v%C3%A4gg-sten-struktur-81890)
+        * signing.html: [Pixabay](https://pixabay.com/sv/illustrations/textur-tr%c3%a4-s%c3%a4d-struktur-tr%c3%a4-textur-1027796/)
        
 
-         
-   
-   
    * Defensive design
-        * 
+
+        * No registrered user can not post, share, delete or edit job advertiseemnt.
+        * More than 5 characters required for username and password by creating an account. 
+        * When deleting posts, a modal appears to confirm if you a user really want to remove or delete post.
+        * Category must given. 
+
+
 [Back to Table of contents](Table-of-Contents)
 
- 
----
+   ### Wireframes
+
+   * [Landing page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:1a0a4575-1e11-4db5-93ed-e3982e30a3b7)
+   * [All Jobs](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:9abe740f-1503-400b-abd8-02fe93ec4c78)
+   * [Sign In](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d1671473-ddeb-45e7-940c-84b711a6a5d5)
+   * [Registration page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d1671473-ddeb-45e7-940c-84b711a6a5d5)
+   * [Contact page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:b406f85f-acc7-4cd7-a242-871a55f2f7e0)
+   * [Profile page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:2ff8016c-3798-40c7-b5a8-021059c86630)
+   * [Post Jobs page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:49aab15b-f859-4adb-9404-a306fda56a1b)
+   * [Edit jobs page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d00c5569-0350-482a-b661-1b085dd2dc07)
+   * [Add category page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:e9c9a793-a92f-4860-9e20-d3bec1aa1452)
+   * [Edit category page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:40fd2d3f-f5e0-476c-bc96-06cb21043f0c)
+
+   ### Data schema
+
+   * I used excalidraw to make a  [Flask](https://excalidraw.com/?ck_subscriber_id=1301493102#json=6375362518843392,Z5nHxrQ7vTDL6fvPMC646A) application structure.
+     
+   * Data schema
+   1. [MongoDB](https://www.mongodb.com/) is the database service used for this project. 
+   1. The project has 3 collections in the database. All fields are string data type. I used [dbdiagram](https://dbdiagram.io/) to make structure for database.
+    ![Data Schema](static/data-schema/db-schema.png)
+
+    
+    
+
+
+
+
 ## Features
 
 Internet job boards continue to be on the top places to search for job openings.The website lists only technical positions. There is a focus here on all types of technical openings-regular, full time, part time and contract. 
