@@ -409,7 +409,7 @@ Go to settings:
 
    * User: 
      
-     * A big thanks to Anders Jansson as a real user tested the functionality of my website.
+     * A big thanks to Anders Jansson as a real user who tested the functionality of my website.
 ---
 
 [My Github page](https://github.com/Sojasmine/swedevco)
