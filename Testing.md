@@ -204,7 +204,7 @@
 
  * [Python](http://pep8online.com/)
   
-   ![python](static/screenshots/python.jpeg)
+  ![python](static/screenshots/python.jpeg)
 
 
 ---
@@ -221,7 +221,7 @@
 
   ![create](static/screenshots/create.jpg)
 
-  > Excpected result: User is able to post a job advertisement. Pass
+  > Result: User is able to post a job advertisement. Pass
 
 
  * **Read**
@@ -230,7 +230,7 @@
 
   ![read](static/screenshots/create1.jpeg)
 
-  > Expected result: User can read and see the job advertisement. Pass
+  > Result: User can read and see the job advertisement. Pass
 
 
 
@@ -248,7 +248,7 @@
 
   ![edit](static/screenshots/edit1.jpg)
 
-  > Expected result: Users updated the category from **Contract** to **Part-time**
+  > Result: Users updated the category from **Contract** to **Part-time**
 
 
 
@@ -264,7 +264,7 @@
 
  ![delete](static/screenshots/del2.jpeg)
 
- > Expected Result: User can delete their own job advertisement.
+ > Result: User can delete their own job advertisement.
 
 
 #### Admin testing
@@ -281,7 +281,7 @@
 
 > Admin can update category
 
-In this exempel, admin edit category **Summer Job** to **Fulltime**
+In this exemple, admin edit category **Summer Job** to **Fulltime**
 
 ![edit category](static/screenshots/edit2.jpg)
 
@@ -290,7 +290,7 @@ In this exempel, admin edit category **Summer Job** to **Fulltime**
 
 > Admin can delete category
 
-In this exempel, Admin remove category **fulltime** from the list.
+In this example, Admin removes the category **fulltime** from the list.
 
 ![delete category](static/screenshots/delete1.jpg)
 
@@ -303,7 +303,7 @@ In this exempel, Admin remove category **fulltime** from the list.
 ## Responsiveness
 
 * Responsiveness is tested with [Am I responsive](http://ami.responsivedesign.is/).
-* The site was tested by following devices:
+* The site was tested by the following devices:
    * Motorola
    * Iphone 7
    * MSI laptop

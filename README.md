@@ -4,6 +4,7 @@
 
 [Live website here](https://swedevco.herokuapp.com/)
 
+![website](static/bugs/Dok3.docx)
 
 ### About the project
 
@@ -48,7 +49,6 @@ ___
 
 [Credits](#Credits)
 
-[Acknowledgements](#Acknowledgements)
 
 ---
 
@@ -296,15 +296,118 @@ It was designed for users to repost jobs that others may find interesting from o
    * [Balsamiq](https://balsamiq.com/) for mockup.
    * [Am I responsive](http://ami.responsivedesign.is/) to test responsiveness. 
    
+---
+[Back to Table of contents](#Table-of-Contents)
 
 ## Testing
  
   Document for testing can be found [here](Testing.md)
 
+---
+
+[Back to Table of contents](#Table-of-Contents)
+
 ## Deployement
+
+#### Before deploying to heroku, follow these steps: 
+
+1. **Github**
+
+   * Sign In in Github.
+   * Use Code Institute [template](https://github.com/Code-Institute-Org/gitpod-full-template) to create a repository.
+   
+* To clone this project from Github follow these steps: 
+   * In the Clone with HTTP section, copy the clone URL for the repository.
+   * Open your favourite terminal (cmd, Powershell, bash, git bash, etc.)
+   * Change the current working directory to the location where you want the cloned directory to be made.
+   * Type git clone, and then paste the URL you copied in Step 2.
+   
+   Visit [Github](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) for more details.
+
+
+2. **Gitpod**
+
+   * Sign in to Gitpod.
+   * Click your current workspace.
+   * 1 Install Flask using command: pip3 install flask
+   * Create a python file: touch app.py
+   * Create an enviornement to store sensitive data: touch .gitignore. This file should never pe pushed to Github.
+   * In the python app we need to: 
+      - import os
+      - from flask import Flask
+      - import env
+      - app = Flask(__name__)
+
+      - If __name__ == ”__main__”:
+      - App.run(host=os.environ.get(”IP)
+
+   * Install these packages: 
+   - Install pip3 flask-pymongo
+   - pip 3 install dnspython
+   - update the requrements.txt file
+   - set up some files that Heroku needs: pip3 freeze –local> requirements.txt
+   - Procfile : echo web: python run.py > Procfile
+
+3. **Deploy to Heroku**
+
+   - Log in to your Heroku account
+   - Create a new app from your dashboard
+   - Create an app name
+   - Choose a region
+   - Connect with Github 
+   - Search your repository name and connect
+Go to settings:
+   - Click on the Reavel Config Vars
+	- Add IP with the value of 0.0.0.0
+   - PORT with the value of 5000
+   - SECRET_KEY with the password from https://randomkeygen.com/
+   - MONGO_DBNAME with the name of your database.
+   - Before deploying to heroku we need to push our repository to Github. 
+   - Go back to deploy and inactivate ”Enable Automatic Deploys”
+   - Click the button ”Deploy branch”
+   - Heroku connected successfully with your Github.
+
+---
+[Back to Table of contents](#Table-of-Contents)
+
 ## Bugs
+
+* Value of the jobs list was *None*
+
+![bugs](static/bugs/Bild2.png)
+
+
+![bugs](static/bugs/Bild3.png)
+
+
+> I solved it by adding a name attribute on the input field.
+
+
 ## Credits
-## Acknowledgements
+
+ * Media: 
+     
+     * Thanks to [Pixabay](https://pixabay.com/) and [Besthqwallpapers](https://besthqwallpapers.com/) for the free downloading of images.
+
+ * Code: 
+      
+     * A great thanks to Tim Nielsen, Code Institue tutor from the Flask mini-project. Thanks to him, I was able to do this project. He is such a great inspiration. 
+
+     * [Materialize](https://materializecss.com/)library was used to create a responsive design. It is simple and easy to use. 
+
+     * Code snippet for the contact form *send email* by  Ania Kubów from [Youtube](https://www.youtube.com/watch?v=r4RQ38EoLds).
+
+     Template for the contact form was taken from [formsubmit](https://formsubmit.co/)
+
+     * All job advertisements was taken from different places. None of them was written by me. 
+
+---
+
+[My Github page](https://github.com/Sojasmine/swedevco)
+
+[My website](http://swedevco.herokuapp.com/)
+
+July © 2021
 
 
 
