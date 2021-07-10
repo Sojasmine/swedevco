@@ -22,12 +22,12 @@
 
 <body>
 
-    <head>
+    <header>
         <!--top navbar-->
         <nav class="nav-extended">
             <div class="nav-wrapper">
                 <!--Home and Title-->
-                <a href="{{ url_for('index') }}" class="brand-logo"><b>Sw<span>ed</span><span>ev</span>Co.</b></a></a>
+                <a href="{{ url_for('index') }}" class="brand-logo"><b>Sw<span>ed</span><span>ev</span>Co.</b></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('index') }}"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a>
@@ -69,7 +69,7 @@
         <ul class="sidenav" id="mobile-demo">
         <!--Title-->
             <li>
-                <h4 class="center-align"></h4>SwedevCo
+                <h4 class="center-align">SwedevCo</h4>
             </li>
         <!--Home-->
             <li><a href="{{ url_for('index') }}"><i class="tiny fa fa-home" aria-hidden="true"></i> Home</a></li>
@@ -105,7 +105,7 @@
             {% endif %}
         </ul>
 
-    </head>
+    </header>
 
     <section>
         <!--flash messages-->
@@ -144,7 +144,7 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">SwedevCo.</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="{{ url_for('register') }}">Register</a></li><br>
+                        <li><a class="grey-text text-lighten-3" href="{{ url_for('register') }}">Register</a></li>
                         <li><a class="grey-text text-lighten-3" href="{{ url_for('signin') }}"> Sign in</a></li>
                     </ul>
                 </div>

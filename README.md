@@ -26,7 +26,7 @@ ___
 
    * [Design](#Design)
    
-   * [Strategy](#Design)
+   * [Strategy](#Strategy)
 
    * [Wireframes](#Wireframes)
 
@@ -134,6 +134,8 @@ It was designed for users to repost jobs that others may find interesting from o
       * Border for the flash messages: #f51fb8;
 
       ![#f51fb8](static/Colors/10.JPG)
+
+      * Background color on the edit_jobs.html: lightblue;
 
    * Typography
 
@@ -299,7 +301,7 @@ It was designed for users to repost jobs that others may find interesting from o
 
 ## Testing
  
-  Document for testing can be found ![here](Testing.md)
+  Document for testing can be found [here](Testing.md)
 
 ## Deployement
 ## Bugs
