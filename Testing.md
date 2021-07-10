@@ -131,7 +131,7 @@
 
    1. **base.html**
      
-  ![Error](static/screenshots/base.jpeg) 
+  ![No error](static/screenshots/validation.png)
 
   > The <br> was removed from </ul>.
 
@@ -139,24 +139,24 @@
 
   > Final result: 
   
-  ![No error](static/screenshots/validation.jpeg)
+  ![No error](static/screenshots/validation.png)
 
   
   2. **add.category.html**
   
-  ![No error](static/screenshots/validation.jpeg)
+  ![No error](static/screenshots/validation.png)
 
   3. **categories.html**
   
-  ![No error](static/screenshots/validation.jpeg)
+  ![No error](static/screenshots/validation.png)
 
   4. **contact.html**
 
-  ![No error](static/screenshots/validation.jpeg)
+  ![No error](static/screenshots/validation.png)
 
   5. **edit_category**
 
-  
+
 
 
 
