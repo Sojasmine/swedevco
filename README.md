@@ -407,6 +407,9 @@ Go to settings:
 
      * All job advertisements was taken from different places. None of them was written by me. 
 
+   * User: 
+     
+     * A big thanks to Anders Jansson as a real user tested the functionality of my website.
 ---
 
 [My Github page](https://github.com/Sojasmine/swedevco)

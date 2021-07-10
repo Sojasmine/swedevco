@@ -338,4 +338,32 @@ If the user type in the wrong URL, an error page will be displayed. Pass
 
 * Tested performance on Developer tools lighthouse
 
-![performance](static/screenshots/performance.jpg)
+1. Landing page
+
+![performance](static/performance/performance.jpg)
+
+2. All Jobs page
+
+![performance](static/performance/jobs.jpg)
+
+
+3. Post Jobs page
+
+![performance](static/performance/post-jobs.jpg)
+
+4. Categories
+
+![performance](static/performance/category.jpg)
+
+5. Sign In page
+
+![performance](static/performance/signin.jpg)
+
+6. Registration page
+
+![performance](static/performance/register.jpg)
+
+7. Contact page
+
+![performance](static/performance/contact.jpg)
+
