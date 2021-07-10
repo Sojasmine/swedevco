@@ -2,23 +2,10 @@
 {% block content %}
 
 
-{% block styles %}
-<style>
-    body {
-        background-image: url('../static/images/img5.jpg');
-    }
-
-    p span {
-        background-color: skyblue;
-    }
-</style>
-{% endblock%}
-
-
 <!-- Headings and paragraph -->
-<h4 class="center-align  white-text lighten-4">Add Category</h4>
-<p class="center-align"><strong><span>Add new category here!</span></strong></p>
-
+<h4 class="center-align  black-text lighten-4">Add Category</h4>
+<p class="center-align"><strong>Add new category here!</strong></p>
+s
 <!--Category name-->
 <div class="row">
     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_category') }}">

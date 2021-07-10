@@ -37,11 +37,11 @@
     <!--Job title-->
     <p class="center-align"><strong>{{ jobs.job_title }}</strong></p>
     <!--Salary-->
-    <p class="center-align">{{ jobs.salary }}</p>
+    <p class="center-align"><i class="fa fa-money-bill-wave"></i> {{ jobs.salary }}</p>
     <!--Category name-->
     <p class="center-align">{{ jobs.category_name }}</p>
     <!--Location-->
-    <p class="center-align">{{ jobs.location }}</p>
+    <p class="center-align"><i class="fa fa-map-marker-alt"></i> {{ jobs.location }}</p>
 
     <ul class="collapsible popout">
       <li>
@@ -74,10 +74,10 @@
           {% endif %}
 
         </div>
-        <div class="collapsible-body"><span>
+        <div class="collapsible-body">
             <!--Job description-->
             <p>{{ jobs.job_description }}</p>
-          </span>
+          
 
           <div>
             <!--Experience-->
@@ -112,11 +112,9 @@
         </div>
 
       </li>
-      <!--Job posted by-->
-      <p class="center-align  blue-text darken-4"><em><strong>Posted by: {{ jobs.posted_by }}</strong></em></p>
-
     </ul>
-
+    <!--Job posted by-->
+    <p class="center-align  blue-text darken-4"><em>Posted by:</em><strong> {{ jobs.posted_by }}</strong></p>
   </div>
   {% endif %}
   {% endfor %}

@@ -18,17 +18,20 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# landing page
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
+# all jobs page
 @app.route("/get_jobs")
 def get_jobs():
     jobs = list(mongo.db.jobs.find())
     return render_template("jobs.html", jobs=jobs)
 
 
+# Registration page
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -55,6 +58,7 @@ def register():
     return render_template("register.html")
 
 
+# Sign In page
 @app.route("/signin", methods=["GET", "POST"])
 def signin():
     if request.method == "POST":
@@ -83,6 +87,7 @@ def signin():
     return render_template("signin.html")
 
 
+# Profile page
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
@@ -97,6 +102,7 @@ def profile(username):
     return redirect(url_for("signin"))
 
 
+# Sign Out page
 @app.route("/signout")
 def signout():
     # remove user from session coikes
@@ -105,6 +111,7 @@ def signout():
     return redirect(url_for("signin"))
 
 
+# Post Jobs page
 @app.route("/post_jobs", methods=["GET", "POST"])
 def post_jobs():
     if request.method == "POST":
@@ -129,6 +136,7 @@ def post_jobs():
     return render_template("post_jobs.html", categories=categories)
 
 
+# Edit Jpbs page
 @app.route("/edit_jobs/<jobs_id>", methods=["GET", "POST"])
 def edit_jobs(jobs_id):
     if request.method == "POST":
@@ -155,6 +163,7 @@ def edit_jobs(jobs_id):
     return render_template("edit_jobs.html", jobs=jobs, categories=categories)
 
 
+# Delete jobs page
 @app.route("/delete_jobs/<jobs_id>")
 def delete_jobs(jobs_id):
     mongo.db.jobs.remove({"_id": ObjectId(jobs_id)})
@@ -162,12 +171,14 @@ def delete_jobs(jobs_id):
     return redirect(url_for("get_jobs"))
 
 
+# Get categories page
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
+# Add category page
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
@@ -181,6 +192,7 @@ def add_category():
     return render_template("add_category.html")
 
 
+# Edit category page
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -195,6 +207,7 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
+# Delete category page
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
@@ -202,6 +215,7 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
+# Contact page
 @app.route("/contact")
 def contact():
     return render_template("contact.html")

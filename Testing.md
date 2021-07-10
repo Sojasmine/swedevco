@@ -155,20 +155,51 @@
   ![No error](static/screenshots/validation.png)
 
   5. **edit_category**
+  
+  ![No error](static/screenshots/validation.png)
 
+  6. **edit_jobs.html**
 
+  ![No error](static/screenshots/validation.png)
+ 
+  7. **index.htm**
 
+  ![No error](static/screenshots/validation.png)
 
+  8. **jobs.html**
+
+  ![No error](static/screenshots/validation.png)
+
+  9. **post_jobs.html**
+
+  ![No error](static/screenshots/validation.png)
+
+  10. **profile.html**
+
+  ![No error](static/screenshots/validation.png)
+
+  11. **register.html**
+
+  ![No error](static/screenshots/validation.png)
+
+  12. **signin.html**
+
+  ![No error](static/screenshots/validation.png)
+
+---
 
  * [CSS](https://jigsaw.w3.org/css-validator/) validate from the direct input.
    
-   ![No error](static/screenshots/validation.jpeg)
+   ![No error](static/screenshots/validation.png)
 
+---
  * [Javascript](https://jshint.com/)
   
    > Result: $ is not defined.
   
   ![jshint](static/screenshots/jshint.jpeg)
+
+---
 
 
  * [Python](http://pep8online.com/)
@@ -176,12 +207,105 @@
    ![python](static/screenshots/python.jpeg)
 
 
+---
+
+## CRUD testing
+
+#### User manual testing: 
+
+ * **Create**
+
+  > Users can create a job advertisement:
+  
+  * A falsh message appear after posting a job adverstisement.
+
+  ![create](static/screenshots/create.jpg)
+
+  > Excpected result: User is able to post a job advertisement. Pass
+
+
+ * **Read**
+
+  > Users can read users job advertisement under the profile name. 
+
+  ![read](static/screenshots/create1.jpeg)
+
+  > Expected result: User can read and see the job advertisement. Pass
+
+
+
+ * **Update**
+
+  > Users can update some information on the job advertisement.
+    
+  * Image before editing: 
+   
+  In this exempel, users updated the category from **Contract** to **Part-time**
+
+  ![edit](static/screenshots/python.edit_job.jpg)
+
+  * Image after editing with the flash message *Post Successfully Udated*:
+
+  ![edit](static/screenshots/edit1.jpg)
+
+  > Expected result: Users updated the category from **Contract** to **Part-time**
+
+
+
+ * **Delete**
+ 
+ > Users can delete their own job advertisement.
+
+   * Image before deleting: 
+
+ ![delete](static/screenshots/del1.jpeg)
+
+   * Image after deleting
+
+ ![delete](static/screenshots/del2.jpeg)
+
+ > Expected Result: User can delete their own job advertisement.
+
+
+#### Admin testing
+
+> Admin can create a new category
+
+![add category](static/screenshots/add-cat.jpg)
+
+
+> Admin can read new category
+
+![add category](static/screenshots/add-cat1.jpg)
+
+
+> Admin can update category
+
+In this exempel, admin edit category **Summer Job** to **Fulltime**
+
+![edit category](static/screenshots/edit2.jpg)
+
+![edit category](static/screenshots/edit3.jpg)
+
+
+> Admin can delete category
+
+In this exempel, Admin remove category **fulltime** from the list.
+
+![delete category](static/screenshots/delete1.jpg)
+
+![delete category](static/screenshots/delete2.jpg)
+
+![delete category](static/screenshots/db.jpg)
+
+---
+
 ## Responsiveness
 
 * Responsiveness is tested with [Am I responsive](http://ami.responsivedesign.is/).
 * The site was tested by following devices:
    * Motorola
-   * Iphone
+   * Iphone 7
    * MSI laptop
    * HP laptop
 
@@ -189,8 +313,13 @@
  ## Browser compability
 
 * The site war running by following browser: 
-   1. Chrome
-   1. Edge
-   1. Opera
-   1. Firefox
+1. Chrome
+1. Edge
+1. Opera
+1. Firefox
+
+
+## Performance testing
+
+* Tested performance on Developper tools lighthouse
 

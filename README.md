@@ -2,8 +2,8 @@
 
 ## Milestone 3, Python and Data Centric development
 
-[Lie website here](https://swedevco.herokuapp.com/)
-add a screen here
+[Live website here](https://swedevco.herokuapp.com/)
+
 
 ### About the project
 
@@ -153,10 +153,8 @@ It was designed for users to repost jobs that others may find interesting from o
 
         * index.html: [Pixabay](https://pixabay.com/sv/illustrations/textur-tr%c3%a4-s%c3%a4d-struktur-tr%c3%a4-textur-1027678/)
         * jobs.html:  [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/gipsstrukturen-texturerat-gips-vit-v%C3%A4gg-konsistens-vit-sten-bakgrund-v%C3%A4gg-83626)
-        * add_category.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/gr%C3%A5-tegel-bakgrund-makro-gr%C3%A5-tegel-gr%C3%A5-brickwall-tegel-texturer-139522)
         * contact.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/4k-vit-brickwall-close-up-vitt-tegel-tegel-texturer-123049)
         * edit_category.html: [Pixabay](https://pixabay.com/sv/photos/vit-m%c3%a5lad-betongv%c3%a4gg-betong-white-888895/)
-        * edit_jobs.html: [Pixabay](https://pixabay.com/sv/photos/v%c3%a4gg-white-abstrakt-tegel-bakgrund-175684/)
         * post_jobs.html: [Pixabay](https://pixabay.com/sv/photos/white-v%c3%a4gg-texturer-arkitektur-4298476/)
         * profile.html: [Pixabay](https://pixabay.com/sv/photos/v%c3%a4gg-tegel-baird-2423815/)
         * register.html: [Besthqwallpapers](https://besthqwallpapers.com/sv/texturer/v%C3%A4gg-konsistens-vit-gipsstrukturen-vit-v%C3%A4gg-sten-struktur-81890)
