@@ -133,9 +133,9 @@
      
   ![No error](static/screenshots/validation.png)
 
-  > The <br> was removed from </ul>.
+  > The `<br>` was removed from `</ul>`.
 
-  > A jinja message is supposed to fill the mepty heading.
+  > A jinja message is supposed to fill the empty heading.
 
   > Final result: 
   
@@ -217,7 +217,7 @@
 
   > Users can create a job advertisement:
   
-  * A falsh message appear after posting a job adverstisement.
+  * A flash message appear after posting a job adverstisement.
 
   ![create](static/screenshots/create.jpg)
 
@@ -242,7 +242,7 @@
    
   In this exempel, users updated the category from **Contract** to **Part-time**
 
-  ![edit](static/screenshots/python.edit_job.jpg)
+  ![edit](static/screenshots/edit_job.jpg)
 
   * Image after editing with the flash message *Post Successfully Udated*:
 
@@ -323,3 +323,4 @@ In this exempel, Admin remove category **fulltime** from the list.
 
 * Tested performance on Developper tools lighthouse
 
+![performance](static/screenshots/performance.jpg)
