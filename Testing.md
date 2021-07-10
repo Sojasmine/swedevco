@@ -121,6 +121,10 @@
 * The footer stays fixed on the bottom of the pages.
 * All internal links are tested and working.
 * All external links for social media are working.
+* Users can Sign In.
+* Users can Sign Out.
+* Users can cend email.
+* Users can make a registration.
 
 
 ## Validation
@@ -267,6 +271,11 @@
  > Result: User can delete their own job advertisement.
 
 
+* **Search**
+
+All users can search job title and experience in the serach field. A red text will appear if the search doesn't not match the criteria.
+
+
 #### Admin testing
 
 > Admin can create a new category
@@ -318,9 +327,15 @@ In this example, Admin removes the category **fulltime** from the list.
 1. Opera
 1. Firefox
 
+## Error page
+
+If the user type in the wrong URL, an error page will be displayed. Pass
+
+![error](static/screenshots/error.jpg)
+
 
 ## Performance testing
 
-* Tested performance on Developper tools lighthouse
+* Tested performance on Developer tools lighthouse
 
 ![performance](static/screenshots/performance.jpg)

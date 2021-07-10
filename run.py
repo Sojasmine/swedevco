@@ -24,6 +24,20 @@ def index():
     return render_template("index.html")
 
 
+# Custom Error pages
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("error.html"), 404
+
+
+# Internal server Error URL
+@app.errorhandler(505)
+def page_not_found(e):
+    return render_template("505.html"), 500
+
+
+
+
 # all jobs page
 @app.route("/get_jobs")
 def get_jobs():
@@ -143,7 +157,7 @@ def post_jobs():
     return render_template("post_jobs.html", categories=categories)
 
 
-# Edit Jpbs page
+# Edit Jobs page
 @app.route("/edit_jobs/<jobs_id>", methods=["GET", "POST"])
 def edit_jobs(jobs_id):
     if request.method == "POST":
@@ -163,7 +177,7 @@ def edit_jobs(jobs_id):
         }
 
         mongo.db.jobs.update({"_id": ObjectId(jobs_id)}, submit)
-        flash("Posts Successfully Updated")
+        flash("Job Successfully Updated")
 
     jobs = mongo.db.jobs.find_one({"_id": ObjectId(jobs_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)

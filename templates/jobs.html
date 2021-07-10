@@ -30,12 +30,13 @@
 </div>
 
 <!--heading and paragraph-->
-<h4 class="center-align black-text"><strong>Job lists:</strong></h4>
+
 
 {% if jobs|length > 0 %}
 
 <!--list if the jobs posted by user and admin-->
 <div class="container">
+  <h4 class="center-align  blue lighten-3"><strong>IT Jobs</strong></h4>
   {% for jobs in jobs %}
   <div class="card-panel">
     <h3 class="center-align">
@@ -52,7 +53,7 @@
 
     <ul class="collapsible popout">
       <li>
-        <div class="collapsible-header  blue-grey lighten-2"><strong>Job Description</strong></div>
+        <div class="collapsible-header  blue-grey lighten-2"><strong>Job Description<i class="tiny fas fa-angle-double-down"></i></strong></div>
         <!--delete button-->
         <div class="col-s3">
           {% if session.user|lower == jobs.posted_by|lower %}

@@ -8,7 +8,7 @@
 
 ### About the project
 
-SwedevCo is a website dedicated to all employers, companies, even private people who want to post a job advertisement or search for an attractive job in the tech sector on the site. The website allows users to create an account and be able to share, edit and delete posts according to (Create, Read, Update, Delete). The website is created in a responsive design that is very handy to search or post a job from mobile devices to tablets or larger screens.
+SwedevCo is a website dedicated to all employers, companies, even private people who want to post a job advertisement or search for an attractive job in the Infortmation Technology sector on the site. The website allows users to create an account and be able to share, edit and delete posts according to (Create, Read, Update, Delete). The website is created in a responsive design that is very handy to search or post a job from mobile devices to tablets or larger screens.
 This website is made to prepare my Milestone Data-centric project with Code Institute.
 This web application was made by Flask and MongoDB, the frontend was designed using materialize.
 
@@ -55,8 +55,8 @@ ___
 ## Description
 
 Swedevco offers a free service to post and share job advertisements from exciting and well-known companies in Sweden.
-Our Category systems make it easy for everyone to find jobs in their specialized field.
-It was designed for users to repost jobs that others may find interesting from other sites, rather than a place to apply for jobs directly.
+The search function on the site make it easy for everyone to find jobs in their specialized field.
+It was designed for users to post jobs that others may find intresting. 
 
 ---
 
@@ -258,6 +258,10 @@ It was designed for users to repost jobs that others may find interesting from o
       * delete and edit a job advertisement
       * add, delete and edit category(only for admin)
 
+   9. **Error page**
+
+     * Error pages 404 and 505 will be displayed if users by mistake click on a broken or dead link.
+
   ### Advanced feature
 
   1. Add pagination.
@@ -397,7 +401,9 @@ Go to settings:
 
      * Code snippet for the contact form *send email* by  Ania Kubów from [Youtube](https://www.youtube.com/watch?v=r4RQ38EoLds).
 
-     Template for the contact form was taken from [formsubmit](https://formsubmit.co/)
+     Template for the contact form was taken from [formsubmit](https://formsubmit.co/).
+
+     * Code snippet from [flask palletsproject](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/) to create the error page.
 
      * All job advertisements was taken from different places. None of them was written by me. 
 
