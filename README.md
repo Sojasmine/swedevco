@@ -307,7 +307,7 @@ It was designed for users to repost jobs that others may find interesting from o
 
 [Back to Table of contents](#Table-of-Contents)
 
-## Deployement
+## Deployment
 
 #### Before deploying to heroku, follow these steps: 
 
