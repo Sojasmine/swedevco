@@ -31,6 +31,13 @@ def get_jobs():
     return render_template("jobs.html", jobs=jobs)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    jobs = list(mongo.db.jobs.find({"$text": {"$search": query}}))
+    return render_template("jobs.html", jobs=jobs)
+
+
 # Registration page
 @app.route("/register", methods=["GET", "POST"])
 def register():

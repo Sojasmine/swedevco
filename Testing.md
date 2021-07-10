@@ -46,7 +46,7 @@
     ![post jobs](static/screenshots/post_jobs.jpeg)
 
     * Search or read for jobs posted by other users.
-    ![]() post it later
+    ![search](static/screenshots/search.jpg)
 
     * Contact the site owner or support.
     > User can use this form to get in touch with the site owner or support.

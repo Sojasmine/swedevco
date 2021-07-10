@@ -4,7 +4,7 @@
 
 [Live website here](https://swedevco.herokuapp.com/)
 
-![website](static/bugs/Dok3.docx)
+![website](static/images/Bild4.png)
 
 ### About the project
 
@@ -175,7 +175,7 @@ It was designed for users to repost jobs that others may find interesting from o
    ### Wireframes
 
    * [Landing page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:1a0a4575-1e11-4db5-93ed-e3982e30a3b7)
-   * [All Jobs]()
+   * [All Jobs](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:8b483c04-7bb2-44ef-8ead-03b7aadffc8c)
    * [Sign In](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:9abe740f-1503-400b-abd8-02fe93ec4c78)
    * [Registration page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d1671473-ddeb-45e7-940c-84b711a6a5d5)
    * [Contact page](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:b406f85f-acc7-4cd7-a242-871a55f2f7e0)
@@ -225,7 +225,7 @@ It was designed for users to repost jobs that others may find interesting from o
    *  Users can read some information about the webpage. A button with a link in the middle of the page leads to the registration page. 
 
    2. **All Jobs**
-   * Users can search jobs in the search engine and read all the technical jobs posted by users.
+   * Users can search jobs in the search engine and read all the technical jobs posted by users on the top of the page.
    * Registered users with an account can delete or edit their job list on the page.
 
    3. **Sign In**
